@@ -1,0 +1,88 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      2901,         80]
+NotebookOptionsPosition[      2483,         64]
+NotebookOutlinePosition[      2826,         79]
+CellTagsIndexPosition[      2783,         76]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Project Idea: Self Analytics Application- \[OpenCurlyDoubleQuote]Moti\
+\[CloseCurlyDoubleQuote] (Motivation)\
+\>", "Section",
+ CellChangeTimes->{{3.7392766785356636`*^9, 3.739276707195692*^9}, {
+  3.739276812841462*^9, 3.7392768247482705`*^9}, {3.739276859717987*^9, 
+  3.739276896003022*^9}, {3.739285107543209*^9, 
+  3.7392851651160994`*^9}},ExpressionUUID->"ebb3b7fd-b0bd-4236-9493-\
+e1bfc485f100"],
+
+Cell[TextData[{
+ "Use machine learning to help identify when people  will make an \
+\[OpenCurlyDoubleQuote]error\[CloseCurlyDoubleQuote] and send warning \
+message. (Like the app Daylio but with warnings like Baymax from Big Hero 6 \
+the movie) It will look for patterns of mood and activities that you commonly \
+have before making a mistake like forgetting your keys or stress. The input \
+will include diet, daily activities, mood entries, and mistakes or outbursts. \
+The output will consist of a weekly report as well as reminders or warnings \
+that will come up to prevent future mistakes or reactions to stress factors.\n\
+\n",
+ ButtonBox["https://daylio.webflow.io\n\n",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://daylio.webflow.io"], None},
+  ButtonNote->"https://daylio.webflow.io"],
+ ButtonBox["https://www.pointclearsolutions.com/baymax-possibility-disneys-\
+big-hero-6-wasnt-wrong-future-healthcare/",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://www.pointclearsolutions.com/baymax-possibility-disneys-big-\
+hero-6-wasnt-wrong-future-healthcare/"], None},
+  ButtonNote->
+   "https://www.pointclearsolutions.com/baymax-possibility-disneys-big-hero-6-\
+wasnt-wrong-future-healthcare/"],
+ "\n"
+}], "Text",
+ CellChangeTimes->{{3.739276347040332*^9, 3.739276393186931*^9}, {
+  3.739276522725927*^9, 3.7392766311237183`*^9}, {3.7392769374693346`*^9, 
+  3.739276947143355*^9}},ExpressionUUID->"f05f4698-9de6-4c36-b8b6-\
+6de4de25552d"]
+}, Open  ]]
+},
+WindowSize->{1536, 821},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 7, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 411, 8, 67, "Section",ExpressionUUID->"ebb3b7fd-b0bd-4236-9493-e1bfc485f100"],
+Cell[997, 32, 1470, 29, 188, "Text",ExpressionUUID->"f05f4698-9de6-4c36-b8b6-6de4de25552d"]
+}, Open  ]]
+}
+]
+*)
+
