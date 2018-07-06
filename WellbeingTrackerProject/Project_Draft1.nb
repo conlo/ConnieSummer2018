@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[    478834,       8137]
-NotebookOptionsPosition[    474372,       8061]
-NotebookOutlinePosition[    474715,       8076]
-CellTagsIndexPosition[    474672,       8073]
+NotebookDataLength[    479006,       8151]
+NotebookOptionsPosition[    472515,       8047]
+NotebookOutlinePosition[    472858,       8062]
+CellTagsIndexPosition[    472815,       8059]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,8 +27,44 @@ Cell[TextData[{
 and be prone to making mistakes. It will look for patterns of mood and \
 activities that the user inputs, identify stress factors, and send a reminder \
 or warning message to the user when the algorithm determines it would be \
-helpful.\nhttps://daylio.webflow.io\n\nData Entries:\nGoogle Form for mood \
-daily logs:\n",
+helpful.\n\n\ntwitter weather data???   send text message/email from website \
+\nexternal systems\n\n\nhttps://daylio.webflow.io\n\nNew Focus: Notification \
+Aspect of Mood tracking apps\n",
+ ButtonBox["http://web.mit.edu/bentley/www/papers/reminders-note-forAC.pdf\n",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://web.mit.edu/bentley/www/papers/reminders-note-forAC.pdf"], 
+    None},
+  ButtonNote->
+   "http://web.mit.edu/bentley/www/papers/reminders-note-forAC.pdf"],
+ "Apple watch apps from wolfram mathematica: \
+http://blog.wolfram.com/2015/04/28/instant-apps-for-the-apple-watch-with-the-\
+wolfram-language/",
+ ButtonBox["\n",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://web.mit.edu/bentley/www/papers/reminders-note-forAC.pdf"], 
+    None},
+  ButtonNote->
+   "http://web.mit.edu/bentley/www/papers/reminders-note-forAC.pdf"],
+ "\n\nmake an option with manipulate to go back and make scenarios where you \
+can see how your week could hypothetically could have been if you for example \
+you ate 1 more serving of fruit\n\[OpenCurlyDoubleQuote]Second, users usually \
+tend to self-report data after the event to be recorded has occurred. In \
+fact,\noften it is not feasible for the user to interrupt her activity in \
+order to record what she feels.\nHowever, when the user is reminded of \
+reporting the data, it is often too late to recollect\nthe exact experienced \
+emotional states\[CloseCurlyDoubleQuote](Computers page 3)\n\nSupporting \
+users in the retrospective reconstruction of emotions. Since people\
+\[CloseCurlyQuote]s reports of their\nemotions reflect whatever information \
+is accessible at the time [24], we aim to provide people with\nsome hints in \
+order to recall the experience where the emotions arose. This would allow the \
+user\nto connect her emotional states to the places visited, the people met, \
+and the task accomplished,\nand, through them, remember what happened to her \
+during the day and report her emotions\nmore faithfully, in a way as similar \
+as possible to how it actually happened (trying to avoid the\ninfluence of \
+beliefs).(computers page 4)\nloading page is a get request \n\ncloud deploy \
+with an api functon\n\nData Entries:\nGoogle Form for mood daily logs:\n",
  ButtonBox["https://docs.google.com/forms/d/12bnXVh8ggOZ5qTDeQxSybTICTjNi1-\
 iyq4XpFTgEZfY/viewform?c=0&w=1&edit_requested=true #responses\n\nNeed to \
 learn about how to quantify stress, draw from existing mood apps, and clarify \
@@ -60,7 +96,60 @@ self-plus-a-list-of-the-best-personal-data-tools-out-there/"], None},
   ButtonNote->
    "http://technori.com/2018/04/4281-the-beginners-guide-to-quantified-self-\
 plus-a-list-of-the-best-personal-data-tools-out-there/"]
-}], "Text",ExpressionUUID->"10671abf-5da5-48de-b673-42c08fd61662"],
+}], "Text",
+ CellChangeTimes->{{3.7397219765285034`*^9, 3.739722007307809*^9}, {
+  3.739874499762586*^9, 3.739874555512154*^9}, {3.7398780582191944`*^9, 
+  3.739878077763379*^9}, {3.7398816409276743`*^9, 3.73988166340961*^9}, {
+  3.7398904178870544`*^9, 3.7398904193969746`*^9}, {3.739894307880969*^9, 
+  3.7398943281051354`*^9}, {3.7398944553892035`*^9, 3.7398944737835026`*^9}, {
+  3.739895407270898*^9, 
+  3.7398954316547794`*^9}},ExpressionUUID->"10671abf-5da5-48de-b673-\
+42c08fd61662"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7398951621982536`*^9, 
+  3.73989516546365*^9}},ExpressionUUID->"b419b030-308e-41f5-bb6b-\
+e17e7d526d66"],
+
+Cell[BoxData[
+ RowBox[{"form", "=", " ", 
+  RowBox[{"Form", " ", 
+   RowBox[{"Function", "[", 
+    RowBox[{"{", 
+     RowBox[{"'", "first"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7398951724918528`*^9, 
+  3.739895197443405*^9}},ExpressionUUID->"c498e14e-274d-42f2-a0a0-\
+1bce99b10a82"],
+
+Cell[BoxData[
+ RowBox[{"and", " ", "then", " ", "cloud", " ", "deploy"}]], "Input",
+ CellChangeTimes->{{3.7398951996731853`*^9, 
+  3.7398952058868265`*^9}},ExpressionUUID->"30765e13-06fc-4f38-91b2-\
+e4c68d386148"],
+
+Cell[BoxData[
+ RowBox[{"set", " ", "permisssions"}]], "Input",
+ CellChangeTimes->{{3.7398952100897493`*^9, 
+  3.739895212245766*^9}},ExpressionUUID->"e243bc52-94f7-4247-a5e7-\
+ac2359e5d735"],
+
+Cell[BoxData[
+ RowBox[{"func", " ", "=", " ", 
+  RowBox[{"APIFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"\"\<x\>\"", "\[Rule]", "\"\<Integer\>\""}], "}"}], ",", 
+    RowBox[{"FactorInteger", "[", "\[IndentingNewLine]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.739895454414009*^9, 
+  3.739895492811471*^9}},ExpressionUUID->"c712b387-3ad9-4c6b-aed4-\
+eefa44e5052b"],
+
+Cell[BoxData[
+ RowBox[{"co", " ", "=", " ", 
+  RowBox[{"CloudDeploy", "[", "func", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7398955183402987`*^9, 
+  3.739895525980383*^9}},ExpressionUUID->"c8ae82b3-d3b0-48b6-9221-\
+20c5cfbfdeca"],
 
 Cell[CellGroupData[{
 
@@ -72,6 +161,255 @@ accumulated list to create correlations between sentiment and activities
 Word embedding in context?\
 \>", "Text",ExpressionUUID->"87743ee2-4d06-4fd5-b4b9-4431bae380e5"],
 
+Cell[BoxData[
+ RowBox[{"Classify", "[", 
+  RowBox[{"\"\<Sentiment\>\"", ",", " ", 
+   RowBox[{"TextCases", "[", 
+    RowBox[{
+    "\"\<I took an ice cream cone. I took a nap. I wrote a story.\>\"", ",", 
+     " ", "\"\<Sentence\>\""}], "]"}], ",", " ", 
+   RowBox[{"IndeterminateThreshold", " ", "->", " ", "0.4"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7398283140412507`*^9, 3.7398283332540693`*^9}, {
+  3.7398990796277122`*^9, 3.7398990805026875`*^9}},
+ CellLabel->"In[78]:=",ExpressionUUID->"c10d277d-dd43-4e61-a14e-008e529e32c9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Counts", "[", 
+  RowBox[{"{", 
+   RowBox[{"\"\<Neutral\>\"", ",", "\"\<Positive\>\"", ",", "Indeterminate"}],
+    "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7398991213325667`*^9, 3.7398991304880595`*^9}, 
+   3.7398991697354846`*^9},
+ CellLabel->"In[80]:=",ExpressionUUID->"fca7d712-f7ca-4ce2-bf26-6bb1699bba7b"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Neutral\"\>", "\[Rule]", "1"}], ",", 
+   RowBox[{"\<\"Positive\"\>", "\[Rule]", "1"}], ",", 
+   RowBox[{"Indeterminate", "\[Rule]", "1"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.7398991310817847`*^9, 3.739899171047885*^9},
+ CellLabel->"Out[80]=",ExpressionUUID->"c195c12e-9821-4681-8b3f-f4cbb27f0dbe"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PieChart", "@", 
+  RowBox[{"Counts", "[", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<Neutral\>\"", ",", "\"\<Positive\>\"", ",", "Indeterminate"}], "}"}],
+    "]"}]}]], "Input",
+ CellChangeTimes->{{3.7398992187142706`*^9, 3.739899223792051*^9}},
+ CellLabel->"In[81]:=",ExpressionUUID->"4b6e7f6d-dee7-4eea-a7ad-de17f5cce93b"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {}, 
+   DynamicModuleBox[{DynamicChart`click$101229$101266 = False, 
+    DynamicChart`click$101239$101266 = False, 
+    DynamicChart`click$101243$101266 = False}, {
+     {RGBColor[0.5, 0.5, 1.], EdgeForm[{GrayLevel[0], Opacity[0.5]}], {{{}, {
+         {RGBColor[0.982864, 0.7431472, 0.3262672], EdgeForm[{GrayLevel[0], 
+          Opacity[0.5]}], GeometricTransformationBox[
+           TagBox[
+            TagBox[
+             TooltipBox[
+              TagBox[
+               DynamicBox[{
+                 FEPrivate`If[
+                  CurrentValue["MouseOver"], 
+                  EdgeForm[{
+                    GrayLevel[0.5], 
+                    AbsoluteThickness[2.5], 
+                    Opacity[0.66]}], {}, {}], 
+                 
+                 DiskBox[{0, 0}, 1., {1.0471975511965979`, 
+                  3.141592653589793}]},
+                
+                ImageSizeCache->{{31.585786437626894`, 
+                 254.91421356237308`}, {-151.4142135623731, \
+-1.5857864376268935`}}],
+               StatusArea[#, 1]& ,
+               TagBoxNote->"1"],
+              StyleBox["1", {}, StripOnInput -> False]],
+             Annotation[#, 
+              Style[1, {}], "Tooltip"]& ],
+            
+            EventHandlerTag[{
+             "MouseClicked" :> FEPrivate`Set[DynamicChart`click$101229$101266, 
+                FEPrivate`Not[DynamicChart`click$101229$101266]], 
+              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+              True}]], Dynamic[
+           If[DynamicChart`click$101229$101266, {{{1., 0}, {
+               0, 1.}}, {-0.10000000000000005`, 0.17320508075688773`}}, {{1, 
+             0}, {0, 1}}, {{1, 0}, {0, 1}}], 
+            TrackedSymbols :> {DynamicChart`click$101229$101266}]]}, 
+         {RGBColor[0.784, 0.47519999999999996`, 0.2], EdgeForm[{GrayLevel[0], 
+          Opacity[0.5]}], GeometricTransformationBox[
+           TagBox[
+            TagBox[
+             TooltipBox[
+              TagBox[
+               DynamicBox[{
+                 FEPrivate`If[
+                  CurrentValue["MouseOver"], 
+                  EdgeForm[{
+                    GrayLevel[0.5], 
+                    AbsoluteThickness[2.5], 
+                    Opacity[0.66]}], {}, {}], 
+                 
+                 DiskBox[{0, 0}, 1., {-1.0471975511965974`, 
+                  1.0471975511965979`}]},
+                
+                ImageSizeCache->{{178.5857864376269, 
+                 328.4142135623731}, {-131.7199479186856, 
+                 125.71994791868559`}}],
+               StatusArea[#, 1]& ,
+               TagBoxNote->"1"],
+              StyleBox["1", {}, StripOnInput -> False]],
+             Annotation[#, 
+              Style[1, {}], "Tooltip"]& ],
+            
+            EventHandlerTag[{
+             "MouseClicked" :> FEPrivate`Set[DynamicChart`click$101239$101266, 
+                FEPrivate`Not[DynamicChart`click$101239$101266]], 
+              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+              True}]], Dynamic[
+           If[DynamicChart`click$101239$101266, {{{1., 0}, {0, 1.}}, {0.2, 
+              4.4408920985006264`*^-17}}, {{1, 0}, {0, 1}}, {{1, 0}, {0, 1}}],
+             TrackedSymbols :> {DynamicChart`click$101239$101266}]]}, 
+         {RGBColor[0.4992, 0.5552, 0.8309304], EdgeForm[{GrayLevel[0], 
+          Opacity[0.5]}], GeometricTransformationBox[
+           TagBox[
+            TagBox[
+             TooltipBox[
+              TagBox[
+               DynamicBox[{
+                 FEPrivate`If[
+                  CurrentValue["MouseOver"], 
+                  EdgeForm[{
+                    GrayLevel[0.5], 
+                    AbsoluteThickness[2.5], 
+                    Opacity[0.66]}], {}, {}], 
+                 
+                 DiskBox[{0, 0}, 
+                  1., {-3.141592653589793, -1.0471975511965974`}]},
+                
+                ImageSizeCache->{{31.585786437626894`, 
+                 254.91421356237313`}, {-4.414213562373078, 
+                 145.4142135623731}}],
+               StatusArea[#, 1]& ,
+               TagBoxNote->"1"],
+              StyleBox["1", {}, StripOnInput -> False]],
+             Annotation[#, 
+              Style[1, {}], "Tooltip"]& ],
+            
+            EventHandlerTag[{
+             "MouseClicked" :> FEPrivate`Set[DynamicChart`click$101243$101266, 
+                FEPrivate`Not[DynamicChart`click$101243$101266]], 
+              PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+              True}]], Dynamic[
+           If[DynamicChart`click$101243$101266, {{{1., 0}, {
+               0, 1.}}, {-0.09999999999999996, -0.17320508075688776`}}, {{1, 
+             0}, {0, 1}}, {{1, 0}, {0, 1}}], 
+            TrackedSymbols :> {
+             DynamicChart`click$101243$101266}]]}}}, {}}, {}}, {{{
+        GeometricTransformationBox[
+         TagBox[
+          TagBox[
+           TooltipBox[
+            TagBox[{{}, {}},
+             StatusArea[#, 1]& ,
+             TagBoxNote->"1"],
+            StyleBox["1", {}, StripOnInput -> False]],
+           Annotation[#, 
+            Style[1, {}], "Tooltip"]& ],
+          
+          EventHandlerTag[{
+           "MouseClicked" :> FEPrivate`Set[DynamicChart`click$101229$101266, 
+              FEPrivate`Not[DynamicChart`click$101229$101266]], 
+            PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+            True}]], Dynamic[
+         If[DynamicChart`click$101229$101266, {{{1., 0}, {
+             0, 1.}}, {-0.10000000000000005`, 0.17320508075688773`}}, {{1, 
+           0}, {0, 1}}, {{1, 0}, {0, 1}}], 
+          TrackedSymbols :> {DynamicChart`click$101229$101266}]], 
+        GeometricTransformationBox[
+         TagBox[
+          TagBox[
+           TooltipBox[
+            TagBox[{{}, {}},
+             StatusArea[#, 1]& ,
+             TagBoxNote->"1"],
+            StyleBox["1", {}, StripOnInput -> False]],
+           Annotation[#, 
+            Style[1, {}], "Tooltip"]& ],
+          
+          EventHandlerTag[{
+           "MouseClicked" :> FEPrivate`Set[DynamicChart`click$101239$101266, 
+              FEPrivate`Not[DynamicChart`click$101239$101266]], 
+            PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+            True}]], Dynamic[
+         If[DynamicChart`click$101239$101266, {{{1., 0}, {0, 1.}}, {0.2, 
+            4.4408920985006264`*^-17}}, {{1, 0}, {0, 1}}, {{1, 0}, {0, 1}}], 
+          TrackedSymbols :> {DynamicChart`click$101239$101266}]], 
+        GeometricTransformationBox[
+         TagBox[
+          TagBox[
+           TooltipBox[
+            TagBox[{{}, {}},
+             StatusArea[#, 1]& ,
+             TagBoxNote->"1"],
+            StyleBox["1", {}, StripOnInput -> False]],
+           Annotation[#, 
+            Style[1, {}], "Tooltip"]& ],
+          
+          EventHandlerTag[{
+           "MouseClicked" :> FEPrivate`Set[DynamicChart`click$101243$101266, 
+              FEPrivate`Not[DynamicChart`click$101243$101266]], 
+            PassEventsDown -> True, Method -> "Preemptive", PassEventsUp -> 
+            True}]], Dynamic[
+         If[DynamicChart`click$101243$101266, {{{1., 0}, {
+             0, 1.}}, {-0.09999999999999996, -0.17320508075688776`}}, {{1, 
+           0}, {0, 1}}, {{1, 0}, {0, 1}}], 
+          TrackedSymbols :> {
+           DynamicChart`click$101243$101266}]]}, {}}, {}}, {}, {}},
+    DynamicModuleValues:>{}], {{}, {}}, {{{}, {}, {}, {}}, {}}},
+  ContentSelectable->False,
+  DisplayFunction->Identity,
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  PlotRange->{{-1., 1.}, {-1., 1.}},
+  PlotRangePadding->Scaled[0.09166666666666669]]], "Output",
+ CellChangeTimes->{3.7398992250263524`*^9},
+ CellLabel->"Out[81]=",ExpressionUUID->"dd8e96b1-72be-4d10-b97b-0d65e049ce7d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TextCases", "[", 
+  RowBox[{
+  "\"\<I took an ice cream cone. I took a nap. I wrote a story.\>\"", ",", 
+   " ", "\"\<Word\>\""}], "]"}]], "Input",
+ CellLabel->"In[15]:=",ExpressionUUID->"282d9e52-9876-4b5a-90f0-da9bc9f6d12c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"I\"\>", ",", "\<\"took\"\>", ",", "\<\"an\"\>", 
+   ",", "\<\"ice\"\>", ",", "\<\"cream\"\>", ",", "\<\"cone\"\>", 
+   ",", "\<\"I\"\>", ",", "\<\"took\"\>", ",", "\<\"a\"\>", 
+   ",", "\<\"nap\"\>", ",", "\<\"I\"\>", ",", "\<\"wrote\"\>", 
+   ",", "\<\"a\"\>", ",", "\<\"story\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.739828293173535*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"e3b5c188-3b84-4827-95c5-68942f78421a"]
+}, Open  ]],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
@@ -80,437 +418,50 @@ Cell[BoxData[
    RowBox[{"TextCases", "[", 
     RowBox[{
     "\"\<I took an ice cream cone. I took a nap. I wrote a story.\>\"", ",", 
-     " ", "\"\<Sentence\>\""}], "]"}], ",", " ", "\"\<TopProbabilities\>\"", 
-   ",", " ", 
+     " ", "\"\<Word\>\""}], "]"}], ",", " ", 
    RowBox[{"IndeterminateThreshold", " ", "->", " ", "0.4"}]}], "]"}]], "Code",
- CellLabel->"In[2]:=",ExpressionUUID->"ba2de962-e540-4721-900d-63a4cbf5ea05"],
+ CellChangeTimes->{{3.73982823720407*^9, 3.7398283048230352`*^9}, {
+  3.739828336189393*^9, 3.739828336564367*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"ba2de962-e540-4721-900d-63a4cbf5ea05"],
 
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"Neutral\"\>", "\[Rule]", "0.6233566520482846`"}], ",", 
-     RowBox[{"\<\"Positive\"\>", "\[Rule]", "0.33530990864717536`"}]}], "}"}],
-    ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"Positive\"\>", "\[Rule]", "0.41956001336880105`"}], ",", 
-     RowBox[{"\<\"Negative\"\>", "\[Rule]", "0.34761760048982127`"}], ",", 
-     RowBox[{"\<\"Neutral\"\>", "\[Rule]", "0.2328223861413775`"}]}], "}"}], 
-   ",", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\<\"Positive\"\>", "\[Rule]", "0.37974579892462584`"}], ",", 
-     RowBox[{"\<\"Negative\"\>", "\[Rule]", "0.33423105280420545`"}], ",", 
-     RowBox[{"\<\"Neutral\"\>", "\[Rule]", "0.28602314827116876`"}]}], 
-    "}"}]}], "}"}]], "Output",
- CellLabel->"Out[2]=",ExpressionUUID->"96e4ea48-6112-425a-a6fd-7d9167642f33"]
+  "Indeterminate", ",", "\<\"Negative\"\>", ",", "Indeterminate", 
+   ",", "\<\"Positive\"\>", ",", "\<\"Positive\"\>", ",", "Indeterminate", 
+   ",", "Indeterminate", ",", "\<\"Negative\"\>", ",", "Indeterminate", 
+   ",", "\<\"Positive\"\>", ",", "Indeterminate", ",", "\<\"Positive\"\>", 
+   ",", "Indeterminate", ",", "Indeterminate"}], "}"}]], "Output",
+ CellChangeTimes->{{3.7398282399694986`*^9, 3.739828256858966*^9}, 
+   3.739828305729193*^9, 3.7398283370018373`*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"976d9452-8448-4d97-97bb-b6969f112ef6"]
 }, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7398316997630944`*^9, 3.7398316999818134`*^9}, 
+   3.7398318514818087`*^9},ExpressionUUID->"28e2fedf-5310-4d76-857a-\
+d325ae31294a"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"TextStructure", "[", "\"\<I was happy after taking a nap.\>\"", 
-  "]"}]], "Code",
- CellLabel->"In[3]:=",ExpressionUUID->"d5b9c61b-730d-43e4-af52-96f5a116f2bc"],
+ RowBox[{"TextStructure", "[", 
+  RowBox[{
+  "\"\<I was happy after taking a nap.\>\"", ",", 
+   "\"\<DependencyStrings\>\""}], "]"}]], "Code",
+ CellChangeTimes->{{3.739827864587886*^9, 3.7398278961743307`*^9}, {
+  3.739828002340769*^9, 3.7398280186398134`*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"d5b9c61b-730d-43e4-af52-96f5a116f2bc"],
 
 Cell[BoxData[
- InterpretationBox[
-  TagBox[GridBox[{
-     {
-      InterpretationBox[GridBox[{
-         {
-          TemplateBox[{"\[ThinSpace]","\" \"",InterpretationBox[
-             GridBox[{{
-                TemplateBox[{"\[ThinSpace]", "\" \"", 
-                  InterpretationBox[
-                   GridBox[{{"\"I\""}, {
-                    StyleBox["\"Pronoun\"", "TextElementLabel"]}}, BaseStyle -> 
-                    "TextElementGrid"], 
-                   TextElement["I", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Pronoun"]]]]}, 
-                 "RowWithSeparators"]}, {
-                StyleBox["\"Noun Phrase\"", "TextElementLabel"]}}, BaseStyle -> 
-              "TextElementGrid"], 
-             TextElement[{
-               TextElement["I", 
-                Association[
-                "GrammaticalUnit" -> Entity["GrammaticalUnit", "Pronoun"]]]}, 
-              Association[
-              "GrammaticalUnit" -> Entity["GrammaticalUnit", "NounPhrase"]]]],
-            InterpretationBox[
-             GridBox[{{
-                TemplateBox[{"\[ThinSpace]", "\" \"", 
-                  InterpretationBox[
-                   GridBox[{{"\"was\""}, {
-                    StyleBox["\"Verb\"", "TextElementLabel"]}}, BaseStyle -> 
-                    "TextElementGrid"], 
-                   TextElement["was", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]]], 
-                  InterpretationBox[
-                   GridBox[{{
-                    TemplateBox[{"\[ThinSpace]", "\" \"", 
-                    InterpretationBox[
-                    GridBox[{{"\"happy\""}, {
-                    StyleBox["\"Adjective\"", "TextElementLabel"]}}, 
-                    BaseStyle -> "TextElementGrid"], 
-                    TextElement["happy", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Adjective"]]]], 
-                    InterpretationBox[
-                    GridBox[{{
-                    TemplateBox[{"\[ThinSpace]", "\" \"", 
-                    InterpretationBox[
-                    GridBox[{{"\"after\""}, {
-                    StyleBox["\"Preposition\"", "TextElementLabel"]}}, 
-                    BaseStyle -> "TextElementGrid"], 
-                    TextElement["after", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Preposition"]]]], 
-                    InterpretationBox[
-                    GridBox[{{
-                    TemplateBox[{"\[ThinSpace]", "\" \"", 
-                    InterpretationBox[
-                    GridBox[{{
-                    TemplateBox[{"\[ThinSpace]", "\" \"", 
-                    InterpretationBox[
-                    GridBox[{{"\"taking\""}, {
-                    StyleBox["\"Verb\"", "TextElementLabel"]}}, BaseStyle -> 
-                    "TextElementGrid"], 
-                    TextElement["taking", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]]], 
-                    InterpretationBox[
-                    GridBox[{{
-                    TemplateBox[{"\[ThinSpace]", "\" \"", 
-                    InterpretationBox[
-                    GridBox[{{"\"a\""}, {
-                    StyleBox["\"Determiner\"", "TextElementLabel"]}}, 
-                    BaseStyle -> "TextElementGrid"], 
-                    TextElement["a", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", 
-                    "Determiner"]]]], 
-                    InterpretationBox[
-                    GridBox[{{"\"nap\""}, {
-                    StyleBox["\"Noun\"", "TextElementLabel"]}}, BaseStyle -> 
-                    "TextElementGrid"], 
-                    TextElement["nap", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", 
-                    "Noun"]]]]}, "RowWithSeparators"]}, {
-                    StyleBox["\"Noun Phrase\"", "TextElementLabel"]}}, 
-                    BaseStyle -> "TextElementGrid"], 
-                    TextElement[{
-                    TextElement["a", 
-                    Association[
-                    "GrammaticalUnit" -> Entity[
-                    "GrammaticalUnit", "Determiner"]]], 
-                    TextElement["nap", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Noun"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> Entity[
-                    "GrammaticalUnit", "NounPhrase"]]]]}, 
-                    "RowWithSeparators"]}, {
-                    StyleBox["\"Verb Phrase\"", "TextElementLabel"]}}, 
-                    BaseStyle -> "TextElementGrid"], 
-                    TextElement[{
-                    TextElement["taking", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]], 
-                    TextElement[{
-                    TextElement["a", 
-                    Association[
-                    "GrammaticalUnit" -> Entity[
-                    "GrammaticalUnit", "Determiner"]]], 
-                    TextElement["nap", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Noun"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> Entity[
-                    "GrammaticalUnit", "NounPhrase"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> Entity[
-                    "GrammaticalUnit", "VerbPhrase"]]]]}, 
-                    "RowWithSeparators"]}, {
-                    StyleBox["\"Clause\"", "TextElementLabel"]}}, BaseStyle -> 
-                    "TextElementGrid"], 
-                    TextElement[{
-                    TextElement[{
-                    TextElement["taking", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]], 
-                    TextElement[{
-                    TextElement["a", 
-                    Association[
-                    "GrammaticalUnit" -> Entity[
-                    "GrammaticalUnit", "Determiner"]]], 
-                    TextElement["nap", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Noun"]]]}, 
-                    Association["GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "NounPhrase"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "VerbPhrase"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Clause"]]]]}, 
-                    "RowWithSeparators"]}, {
-                    StyleBox[
-                    "\"Prepositional Phrase\"", "TextElementLabel"]}}, 
-                    BaseStyle -> "TextElementGrid"], 
-                    TextElement[{
-                    TextElement["after", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Preposition"]]], 
-                    TextElement[{
-                    TextElement[{
-                    TextElement["taking", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]], 
-                    TextElement[{
-                    TextElement["a", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Determiner"]]], 
-                    TextElement["nap", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Noun"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "NounPhrase"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "VerbPhrase"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Clause"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "PrepositionalPhrase"]]]]}, 
-                    "RowWithSeparators"]}, {
-                    StyleBox["\"Adjective Phrase\"", "TextElementLabel"]}}, 
-                    BaseStyle -> "TextElementGrid"], 
-                   TextElement[{
-                    TextElement["happy", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Adjective"]]], 
-                    TextElement[{
-                    TextElement["after", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Preposition"]]], 
-                    TextElement[{
-                    TextElement[{
-                    TextElement["taking", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]], 
-                    TextElement[{
-                    TextElement["a", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Determiner"]]], 
-                    TextElement["nap", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Noun"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "NounPhrase"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "VerbPhrase"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Clause"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "PrepositionalPhrase"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "AdjectivePhrase"]]]]}, 
-                 "RowWithSeparators"]}, {
-                StyleBox["\"Verb Phrase\"", "TextElementLabel"]}}, BaseStyle -> 
-              "TextElementGrid"], 
-             TextElement[{
-               TextElement["was", 
-                Association[
-                "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]], 
-               TextElement[{
-                 TextElement["happy", 
-                  Association[
-                  "GrammaticalUnit" -> 
-                   Entity["GrammaticalUnit", "Adjective"]]], 
-                 TextElement[{
-                   TextElement["after", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Preposition"]]], 
-                   TextElement[{
-                    TextElement[{
-                    TextElement["taking", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]], 
-                    TextElement[{
-                    TextElement["a", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Determiner"]]], 
-                    TextElement["nap", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Noun"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "NounPhrase"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "VerbPhrase"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Clause"]]]}, 
-                  Association[
-                  "GrammaticalUnit" -> 
-                   Entity["GrammaticalUnit", "PrepositionalPhrase"]]]}, 
-                Association[
-                "GrammaticalUnit" -> 
-                 Entity["GrammaticalUnit", "AdjectivePhrase"]]]}, 
-              Association[
-              "GrammaticalUnit" -> Entity["GrammaticalUnit", "VerbPhrase"]]]],
-            InterpretationBox[
-             GridBox[{{"\".\""}, {
-                StyleBox["\"Punctuation\"", "TextElementLabel"]}}, BaseStyle -> 
-              "TextElementGrid"], 
-             TextElement[".", 
-              Association[
-              "GrammaticalUnit" -> 
-               Entity["GrammaticalUnit", "Punctuation"]]]]},
-           "RowWithSeparators"]},
-         {
-          StyleBox["\<\"Sentence\"\>", "TextElementLabel"]}
-        },
-        BaseStyle->"TextElementGrid"],
-       TextElement[{
-         TextElement[{
-           TextElement["I", 
-            Association[
-            "GrammaticalUnit" -> Entity["GrammaticalUnit", "Pronoun"]]]}, 
-          Association[
-          "GrammaticalUnit" -> Entity["GrammaticalUnit", "NounPhrase"]]], 
-         TextElement[{
-           TextElement["was", 
-            Association[
-            "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]], 
-           TextElement[{
-             TextElement["happy", 
-              Association[
-              "GrammaticalUnit" -> Entity["GrammaticalUnit", "Adjective"]]], 
-             TextElement[{
-               TextElement["after", 
-                Association[
-                "GrammaticalUnit" -> 
-                 Entity["GrammaticalUnit", "Preposition"]]], 
-               TextElement[{
-                 TextElement[{
-                   TextElement["taking", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]], 
-                   TextElement[{
-                    TextElement["a", 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Determiner"]]], 
-                    TextElement["nap", 
-                    Association[
-                    "GrammaticalUnit" -> Entity["GrammaticalUnit", "Noun"]]]}, 
-                    Association[
-                    "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "NounPhrase"]]]}, 
-                  Association[
-                  "GrammaticalUnit" -> 
-                   Entity["GrammaticalUnit", "VerbPhrase"]]]}, 
-                Association[
-                "GrammaticalUnit" -> Entity["GrammaticalUnit", "Clause"]]]}, 
-              Association[
-              "GrammaticalUnit" -> 
-               Entity["GrammaticalUnit", "PrepositionalPhrase"]]]}, 
-            Association[
-            "GrammaticalUnit" -> 
-             Entity["GrammaticalUnit", "AdjectivePhrase"]]]}, 
-          Association[
-          "GrammaticalUnit" -> Entity["GrammaticalUnit", "VerbPhrase"]]], 
-         TextElement[".", 
-          Association[
-          "GrammaticalUnit" -> Entity["GrammaticalUnit", "Punctuation"]]]}, 
-        Association[
-        "GrammaticalUnit" -> Entity["GrammaticalUnit", "Sentence"]]]]}
-    },
-    DefaultBaseStyle->"Column",
-    GridBoxAlignment->{"Columns" -> {{Left}}},
-    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-   "Column"],
-  TextElement[{
-    TextElement[{
-      TextElement[{
-        TextElement["I", 
-         Association[
-         "GrammaticalUnit" -> Entity["GrammaticalUnit", "Pronoun"]]]}, 
-       Association[
-       "GrammaticalUnit" -> Entity["GrammaticalUnit", "NounPhrase"]]], 
-      TextElement[{
-        TextElement["was", 
-         Association["GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]], 
-        TextElement[{
-          TextElement["happy", 
-           Association[
-           "GrammaticalUnit" -> Entity["GrammaticalUnit", "Adjective"]]], 
-          TextElement[{
-            TextElement["after", 
-             Association[
-             "GrammaticalUnit" -> Entity["GrammaticalUnit", "Preposition"]]], 
-            TextElement[{
-              TextElement[{
-                TextElement["taking", 
-                 Association[
-                 "GrammaticalUnit" -> Entity["GrammaticalUnit", "Verb"]]], 
-                TextElement[{
-                  TextElement["a", 
-                   Association[
-                   "GrammaticalUnit" -> 
-                    Entity["GrammaticalUnit", "Determiner"]]], 
-                  TextElement["nap", 
-                   Association[
-                   "GrammaticalUnit" -> Entity["GrammaticalUnit", "Noun"]]]}, 
-                 Association[
-                 "GrammaticalUnit" -> 
-                  Entity["GrammaticalUnit", "NounPhrase"]]]}, 
-               Association[
-               "GrammaticalUnit" -> 
-                Entity["GrammaticalUnit", "VerbPhrase"]]]}, 
-             Association[
-             "GrammaticalUnit" -> Entity["GrammaticalUnit", "Clause"]]]}, 
-           Association[
-           "GrammaticalUnit" -> 
-            Entity["GrammaticalUnit", "PrepositionalPhrase"]]]}, 
-         Association[
-         "GrammaticalUnit" -> Entity["GrammaticalUnit", "AdjectivePhrase"]]]}, 
-       Association[
-       "GrammaticalUnit" -> Entity["GrammaticalUnit", "VerbPhrase"]]], 
-      TextElement[".", 
-       Association[
-       "GrammaticalUnit" -> Entity["GrammaticalUnit", "Punctuation"]]]}, 
-     Association[
-     "GrammaticalUnit" -> 
-      Entity["GrammaticalUnit", "Sentence"]]]}]]], "Output",
- CellLabel->"Out[3]=",ExpressionUUID->"78c80cd5-4e46-497d-ba94-31484474f9a5"]
+ RowBox[{"{", "\<\"(happy, 3)((nsubj, (I, 1)), (cop, (was, 2)), (prep, \
+(after, 4)((pcomp, (taking, 5)((dobj, (nap, 7)((det, (a, 6)))))))))\"\>", 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.7398278825345325`*^9, 3.739827900960672*^9}, 
+   3.7398280208427896`*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"346c55c0-3648-47dd-ad3c-467e98b21c5a"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -7812,108 +7763,77 @@ JZO8DkfnBef+CY7IVGt947XWaPEO6PGR/CF2EoidvxVHj8s8QhqEJEJ8ktfP
 /wO5MvDm\
 \>"],ExpressionUUID->"2993fea4-d843-40bd-a2db-1cac3e950890"],
 
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+    "text", "=", 
+     "\"\<I am feeling peaceful. Watched the sun rise and heard the birds \
+chirp a beautiful good morning song. I caught up on slack messages and smiled \
+at the intellectual curiousity and genuine helpfulness of students and \
+instructors working together to do something amazing. Being a part of such a \
+wonderful, diverse group of people coming together regardless of differences \
+in backgrounds, religion, race and gender is inspiring. Stretching sore \
+muscles (body and brain) reminds me both have been worked, and it feels good.\
+\>\""}], ";"}], "\n"}], "Input"]], "Input",
+ CellChangeTimes->{{3.7398275585744543`*^9, 3.7398275926565323`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"19688ffd-3847-4ca7-9e1a-d9ad8c7bf4d2"],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"text", "=", " ", 
-  RowBox[{"\[OpenCurlyDoubleQuote]", 
-   RowBox[{
-    RowBox[{"I", " ", "am", " ", "feeling", " ", 
-     RowBox[{"peaceful", ".", " ", "Watched"}], " ", "the", " ", "sun", " ", 
-     "rise", " ", "and", " ", "heard", " ", "the", " ", "birds", " ", "chirp",
-      " ", "a", " ", "beautiful", " ", "good", " ", "morning", " ", 
-     RowBox[{"song", ".", " ", "I"}], " ", "caught", " ", "up", " ", "on", 
-     " ", "slack", " ", "messages", " ", "and", " ", "smiled", " ", "at", " ",
-      "the", " ", "intellectual", " ", "curiousity", " ", "and", " ", 
-     "genuine", " ", "helpfulness", " ", "of", " ", "students", " ", "and", 
-     " ", "instructors", " ", "working", " ", "together", " ", "to", " ", 
-     "do", " ", "something", " ", 
-     RowBox[{"amazing", ".", " ", "Being"}], " ", "a", " ", "part", " ", "of",
-      " ", "such", " ", "a", " ", "wonderful"}], ",", " ", 
-    RowBox[{
-    "diverse", " ", "group", " ", "of", " ", "people", " ", "coming", " ", 
-     "together", " ", "regardless", " ", "of", " ", "differences", " ", "in", 
-     " ", "backgrounds"}], ",", " ", "religion", ",", " ", 
-    RowBox[{"race", " ", "and", " ", "gender", " ", "is", " ", 
-     RowBox[{"inspiring", ".", " ", "Stretching"}], " ", "sore", " ", 
-     "muscles", " ", 
-     RowBox[{"(", 
-      RowBox[{"body", " ", "and", " ", "brain"}], ")"}], " ", "reminds", " ", 
-     "me", " ", "both", " ", "have", " ", "been", " ", "worked"}], ",", " ", 
-    RowBox[{"and", " ", "it", " ", "feels", " ", 
-     RowBox[{
-     "good", ".", "\"\<;\nsentences = StringSplit[text]\>"}]}]}]}]}]], "Code",
- EmphasizeSyntaxErrors->True,
- CellLabel->"In[12]:=",ExpressionUUID->"02172c99-2813-45bd-9bb2-7a0083fe9666"],
+ RowBox[{"sentences", " ", "=", " ", 
+  RowBox[{"TextCases", "[", 
+   RowBox[{"text", ",", " ", "\"\<Sentence\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7398276306838384`*^9, 3.7398276621192865`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"3baf7725-449e-4377-81a6-84887cbc57a4"],
 
 Cell[BoxData[
- TemplateBox[{
-  "Syntax","tsntxi",
-   "\"\\\"\\!\\(\\*RowBox[{\\\"\[OpenCurlyDoubleQuote]\\\", \
-RowBox[{RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\
-\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"and\\\", \\\"it\\\", \
-\\\"feels\\\", RowBox[{\\\"good\\\", \\\".\\\", \\\"\\\\\\\";\\\\nsentences = \
-StringSplit[text]\\\"}]}]}]}]\\)\\\" is incomplete; more input is \
-needed.\\!\\(\\*RowBox[{\\\"\\\\\\\"\\\\\\\"\\\"}]\\)\"",2,12,9,
-   30533910081333057146,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- GeneratedCell->False,
- CellAutoOverwrite->False,
- CellLabel->
-  "During evaluation of \
-In[12]:=",ExpressionUUID->"07ea57ad-9dda-418a-bb11-c97f9c423927"],
+ RowBox[{"{", 
+  RowBox[{"\<\"I am feeling peaceful.\"\>", 
+   ",", "\<\"Watched the sun rise and heard the birds chirp a beautiful good \
+morning song.\"\>", 
+   ",", "\<\"I caught up on slack messages and smiled at the intellectual \
+curiousity and genuine helpfulness of students and instructors working \
+together to do something amazing.\"\>", 
+   ",", "\<\"Being a part of such a wonderful, diverse group of people coming \
+together regardless of differences in backgrounds, religion, race and gender \
+is inspiring.\"\>", 
+   ",", "\<\"Stretching sore muscles (body and brain) reminds me both have \
+been worked, and it feels good.\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.739827673142747*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"b795e077-945d-4a87-9460-50fdea7df2b6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
- TemplateBox[{
-  "Syntax","tsntxi",
-   "\"\\\"\\!\\(\\*RowBox[{\\\"\[OpenCurlyDoubleQuote]\\\", \
-RowBox[{RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\
-\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"and\\\", \\\"it\\\", \
-\\\"feels\\\", RowBox[{\\\"good\\\", \\\".\\\", \\\"\\\\\\\";\\\\nsentences = \
-StringSplit[text]\\\"}]}]}]}]\\)\\\" is incomplete; more input is \
-needed.\\!\\(\\*RowBox[{\\\"\\\\\\\"\\\\\\\"\\\"}]\\)\"",2,12,8,
-   30533910081333057146,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- GeneratedCell->False,
- CellAutoOverwrite->False,
- CellLabel->
-  "During evaluation of \
-In[12]:=",ExpressionUUID->"d7aea5db-1eda-45f3-a1ca-45a02e8550fe"],
+ StyleBox[
+  RowBox[{"sentences", " ", "=", " ", 
+   RowBox[{"StringSplit", "[", 
+    RowBox[{"text", ",", "\"\<.\>\""}], "]"}]}], "Input"]], "Input",
+ CellChangeTimes->{{3.739827537136531*^9, 3.7398275371521544`*^9}, {
+  3.739827721409178*^9, 3.73982772761197*^9}, {3.739827768390755*^9, 
+  3.7398277742013464`*^9}, {3.739827821684843*^9, 3.7398278225129576`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"f07d628c-b2e6-4418-8409-e222e41da4b3"],
 
 Cell[BoxData[
- TemplateBox[{
-  "Syntax","tsntxi",
-   "\"\\\"\\!\\(\\*RowBox[{\\\"\[OpenCurlyDoubleQuote]\\\", \
-RowBox[{RowBox[{\\\"\[LeftSkeleton]\\\", \\\"1\\\", \
-\\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"\[LeftSkeleton]\\\", \\\"3\
-\\\", \\\"\[RightSkeleton]\\\"}], \\\",\\\", RowBox[{\\\"and\\\", \\\"it\\\", \
-\\\"feels\\\", RowBox[{\\\"good\\\", \\\".\\\", \\\"\\\\\\\";\\\\nsentences = \
-StringSplit[text]\\\"}]}]}]}]\\)\\\" is incomplete; more input is \
-needed.\\!\\(\\*RowBox[{\\\"\\\\\\\"\\\\\\\"\\\"}]\\)\"",2,12,7,
-   30533910081333057146,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- GeneratedCell->False,
- CellAutoOverwrite->False,
- CellLabel->
-  "During evaluation of \
-In[12]:=",ExpressionUUID->"38815798-388c-412c-9d37-5c5a19149c79"],
-
-Cell[BoxData[
- TemplateBox[{
-  "Syntax","bktmcp",
-   "\:f3b5Expression \"\!\({\[OpenCurlyDoubleQuote]\[LeftSkeleton]1\
-\[RightSkeleton], diverse  group  of  people  coming  together  regardless  \
-of  differences  in  backgrounds, religion, race  and  gender  is  inspiring \
-. Stretching  sore  muscles \((body  and  brain)\) reminds  me  both  have  \
-been  worked, and  it  feels  good . \[OpenCurlyDoubleQuote]\)\" has no \
-closing \"\!\(\\\"\\<}\\>\\\"\)\"\!\(\\\"\\<\\>\\\"\).\:f3b5",2,12,4,
-   30533910081333057146,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- GeneratedCell->False,
- CellAutoOverwrite->
-  False,ExpressionUUID->"970d63a7-2b97-404f-918c-81a981d18d47"]
+ RowBox[{"{", 
+  RowBox[{"\<\"I am feeling peaceful\"\>", 
+   ",", "\<\" Watched the sun rise and heard the birds chirp a beautiful good \
+morning song\"\>", 
+   ",", "\<\" I caught up on slack messages and smiled at the intellectual \
+curiousity and genuine helpfulness of students and instructors working \
+together to do something amazing\"\>", 
+   ",", "\<\" Being a part of such a wonderful, diverse group of people \
+coming together regardless of differences in backgrounds, religion, race and \
+gender is inspiring\"\>", 
+   ",", "\<\" Stretching sore muscles (body and brain) reminds me both have \
+been worked, and it feels good\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.7398276003762093`*^9, 3.7398277293773837`*^9, 
+  3.7398277751544013`*^9, 3.73982782477838*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"065ff5de-185b-44fa-ab9e-70644da9cc50"]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -7927,7 +7847,40 @@ Benchmark\>\"", "]"}], ";"}], "\n",
   "NetModel", "[", 
    "\"\<ELMo Contextual Word Representations Trained on 1B Word \
 Benchmark\>\"", "]"}]}]}], "Code",ExpressionUUID->"d8cf02c0-7a3c-4e25-9fe3-\
-bce467ab5e3e"]
+bce467ab5e3e"],
+
+Cell["\<\
+Association: what did we mention I was supposed to use that for?\
+\>", "Text",
+ CellChangeTimes->{{3.739720898519966*^9, 3.7397209011051617`*^9}, {
+  3.7397209871978374`*^9, 
+  3.739721004238613*^9}},ExpressionUUID->"de7e6365-7b3d-4a4d-a71f-\
+97d05f1b128b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"data", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<a\>\"", "\[Rule]", 
+        RowBox[{"<|", 
+         RowBox[{"\"\<a\>\"", "\[Rule]", "\"\<a1\>\""}], "|>"}]}], ",", 
+       RowBox[{"\"\<b\>\"", "\[Rule]", 
+        RowBox[{"<|", 
+         RowBox[{"\"\<b\>\"", "\[Rule]", "\"\<b1\>\""}], "|>"}]}]}], "|>"}], 
+     ",", " ", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<a\>\"", "\[Rule]", 
+        RowBox[{"<|", 
+         RowBox[{"\"\<a\>\"", "\[Rule]", "\"\<a2\>\""}], "|>"}]}], ",", 
+       RowBox[{"\"\<b\>\"", "\[Rule]", 
+        RowBox[{"<|", 
+         RowBox[{"\"\<b\>\"", "\[Rule]", "\"\<b2\>\""}], "|>"}]}]}], "|>"}]}],
+     "}"}]}], ";"}]], "Input",ExpressionUUID->"4c78d862-7075-4e7e-8032-\
+5be8d0f381ff"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -8055,7 +8008,40 @@ Cell[CellGroupData[{
 
 Cell["Output Data", "Section",ExpressionUUID->"5469d251-1dcd-45b3-8592-6da32a4eec41"],
 
-Cell[BoxData["Export"], "Input",ExpressionUUID->"457f18cf-636c-4d4d-b249-dba5f42d8ff4"]
+Cell[BoxData["Export"], "Input",ExpressionUUID->"457f18cf-636c-4d4d-b249-dba5f42d8ff4"],
+
+Cell[BoxData[
+ RowBox[{"look", " ", "at", " ", "one", " ", "heartrate", " ", "datapoint", 
+  " ", "and", " ", "look", " ", "at", " ", "first", " ", "function", " ", 
+  "and", " ", "match", " ", "up", " ", "value", " ", "with", " ", 
+  "time"}]], "Input",
+ CellChangeTimes->{{3.7397277762923036`*^9, 
+  3.73972783711498*^9}},ExpressionUUID->"0e59d5e5-80a7-479b-976d-\
+ea76b01ab41c"],
+
+Cell[BoxData[
+ RowBox[{"try", " ", "to", " ", "be", " ", "as", " ", "general", " ", "as", 
+  " ", "possible", " ", "function"}]], "Input",
+ CellChangeTimes->{{3.7397278089327283`*^9, 
+  3.7397278156709876`*^9}},ExpressionUUID->"f832fbf6-ca7b-439e-a115-\
+502089bea379"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "dont", " ", "crash", " ", "the", " ", "front", " ", "end", " ", "by", " ", 
+   "dislaying", " ", "all", " ", "the", " ", "data"}], ";"}]], "Input",
+ CellChangeTimes->{{3.7397278550523043`*^9, 
+  3.739727872067194*^9}},ExpressionUUID->"da96dbe1-62db-4d9c-9cd1-\
+c1df7df043df"],
+
+Cell[BoxData[{
+ RowBox[{"evaluate", " ", "the", " ", "first", " ", "cells", " ", "and", " ", 
+  "then", " ", "use", " ", "the", " ", "inout"}], "\[IndentingNewLine]", 
+ RowBox[{"stringcases", ",", " "}]}], "Input",
+ CellChangeTimes->{{3.7397279449923196`*^9, 
+  3.739727968959016*^9}},ExpressionUUID->"8381f089-6000-4797-a5a3-\
+927aebda5d86"]
 }, Open  ]]
 }, Open  ]]
 },
@@ -8077,66 +8063,94 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[583, 22, 98, 0, 96, "Title",ExpressionUUID->"77b23c8c-282e-4e1f-bb58-415c31e8453a"],
-Cell[684, 24, 1917, 38, 276, "Text",ExpressionUUID->"10671abf-5da5-48de-b673-42c08fd61662"],
+Cell[684, 24, 4500, 82, 892, "Text",ExpressionUUID->"10671abf-5da5-48de-b673-42c08fd61662"],
+Cell[5187, 108, 153, 3, 28, "Input",ExpressionUUID->"b419b030-308e-41f5-bb6b-e17e7d526d66"],
+Cell[5343, 113, 287, 8, 28, "Input",ExpressionUUID->"c498e14e-274d-42f2-a0a0-1bce99b10a82"],
+Cell[5633, 123, 213, 4, 28, "Input",ExpressionUUID->"30765e13-06fc-4f38-91b2-e4c68d386148"],
+Cell[5849, 129, 190, 4, 28, "Input",ExpressionUUID->"e243bc52-94f7-4247-a5e7-ac2359e5d735"],
+Cell[6042, 135, 379, 9, 48, "Input",ExpressionUUID->"c712b387-3ad9-4c6b-aed4-eefa44e5052b"],
+Cell[6424, 146, 229, 5, 28, "Input",ExpressionUUID->"c8ae82b3-d3b0-48b6-9221-20c5cfbfdeca"],
 Cell[CellGroupData[{
-Cell[2626, 66, 97, 0, 67, "Section",ExpressionUUID->"0bfd5a6d-4108-4c80-b0c1-e6824932cd95"],
-Cell[2726, 68, 255, 4, 56, "Text",ExpressionUUID->"87743ee2-4d06-4fd5-b4b9-4431bae380e5"],
+Cell[6678, 155, 97, 0, 67, "Section",ExpressionUUID->"0bfd5a6d-4108-4c80-b0c1-e6824932cd95"],
+Cell[6778, 157, 255, 4, 56, "Text",ExpressionUUID->"87743ee2-4d06-4fd5-b4b9-4431bae380e5"],
+Cell[7036, 163, 539, 11, 28, "Input",ExpressionUUID->"c10d277d-dd43-4e61-a14e-008e529e32c9"],
 Cell[CellGroupData[{
-Cell[3006, 76, 453, 9, 50, "Code",ExpressionUUID->"ba2de962-e540-4721-900d-63a4cbf5ea05"],
-Cell[3462, 87, 864, 20, 32, "Output",ExpressionUUID->"96e4ea48-6112-425a-a6fd-7d9167642f33"]
+Cell[7600, 178, 338, 7, 28, InheritFromParent,ExpressionUUID->"fca7d712-f7ca-4ce2-bf26-6bb1699bba7b"],
+Cell[7941, 187, 397, 8, 32, "Output",ExpressionUUID->"c195c12e-9821-4681-8b3f-f4cbb27f0dbe"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4363, 112, 184, 3, 50, "Code",ExpressionUUID->"d5b9c61b-730d-43e4-af52-96f5a116f2bc"],
-Cell[4550, 117, 17686, 395, 198, "Output",ExpressionUUID->"78c80cd5-4e46-497d-ba94-31484474f9a5"]
+Cell[8375, 200, 345, 8, 28, "Input",ExpressionUUID->"4b6e7f6d-dee7-4eea-a7ad-de17f5cce93b"],
+Cell[8723, 210, 7764, 179, 377, "Output",ExpressionUUID->"dd8e96b1-72be-4d10-b97b-0d65e049ce7d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22273, 517, 135, 2, 50, "Code",ExpressionUUID->"5ffce66d-44ff-4a4d-8b04-4012f92f3601"],
-Cell[22411, 521, 1843, 41, 382, "Output",ExpressionUUID->"190d63c2-e441-456a-a263-38d62fa154bb"]
-}, Open  ]],
-Cell[24269, 565, 137, 2, 67, "Input",ExpressionUUID->"b4018bb5-01eb-433d-8903-18dd6c51f90d"],
-Cell[24409, 569, 2169, 49, 224, "Text",ExpressionUUID->"49c72b68-33fa-44f8-b4f3-b61ae7d94156"],
-Cell[26581, 620, 165, 3, 34, "Text",ExpressionUUID->"2221af54-6fcd-4eea-839b-38c5e7281103"],
-Cell[26749, 625, 438080, 7187, 365, 319191, 5237, "CachedBoxData", "BoxData", "Input",ExpressionUUID->"2993fea4-d843-40bd-a2db-1cac3e950890"],
-Cell[CellGroupData[{
-Cell[464854, 7816, 1732, 30, 69, "Code",ExpressionUUID->"02172c99-2813-45bd-9bb2-7a0083fe9666"],
-Cell[466589, 7848, 767, 16, 39, "Message",ExpressionUUID->"07ea57ad-9dda-418a-bb11-c97f9c423927"],
-Cell[467359, 7866, 767, 16, 39, "Message",ExpressionUUID->"d7aea5db-1eda-45f3-a1ca-45a02e8550fe"],
-Cell[468129, 7884, 767, 16, 39, "Message",ExpressionUUID->"38815798-388c-412c-9d37-5c5a19149c79"],
-Cell[468899, 7902, 680, 13, 73, "Message",ExpressionUUID->"970d63a7-2b97-404f-918c-81a981d18d47"]
-}, Open  ]],
-Cell[469594, 7918, 392, 11, 69, "Code",ExpressionUUID->"d8cf02c0-7a3c-4e25-9fe3-bce467ab5e3e"]
+Cell[16524, 394, 250, 5, 28, "Input",ExpressionUUID->"282d9e52-9876-4b5a-90f0-da9bc9f6d12c"],
+Cell[16777, 401, 468, 8, 32, "Output",ExpressionUUID->"e3b5c188-3b84-4827-95c5-68942f78421a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[470023, 7934, 84, 0, 67, "Section",ExpressionUUID->"5a8f4617-8222-4b97-b08f-f3f62d800d18"],
-Cell[470110, 7936, 163, 3, 34, "Text",ExpressionUUID->"61caef2a-09cc-4133-bd81-2c0a3078e76b"],
-Cell[470276, 7941, 87, 0, 28, "Input",ExpressionUUID->"9ea463f5-f857-4af4-be5f-f4d42452a85b"]
+Cell[17282, 414, 524, 10, 50, "Code",ExpressionUUID->"ba2de962-e540-4721-900d-63a4cbf5ea05"],
+Cell[17809, 426, 595, 10, 32, "Output",ExpressionUUID->"976d9452-8448-4d97-97bb-b6969f112ef6"]
+}, Open  ]],
+Cell[18419, 439, 261, 5, 86, "Input",ExpressionUUID->"28e2fedf-5310-4d76-857a-d325ae31294a"],
+Cell[CellGroupData[{
+Cell[18705, 448, 355, 7, 50, "Code",ExpressionUUID->"d5b9c61b-730d-43e4-af52-96f5a116f2bc"],
+Cell[19063, 457, 356, 6, 32, "Output",ExpressionUUID->"346c55c0-3648-47dd-ad3c-467e98b21c5a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[470400, 7946, 111, 0, 67, "Section",ExpressionUUID->"4935ccaa-2d57-4a61-8905-75ca565a0ab6"],
-Cell[470514, 7948, 89, 0, 28, "Input",ExpressionUUID->"05128870-3382-4a05-8113-1312c78b115f"],
-Cell[470606, 7950, 91, 0, 28, "Input",ExpressionUUID->"8855762b-ae99-482d-aaef-cf4d6580d87b"],
-Cell[CellGroupData[{
-Cell[470722, 7954, 134, 2, 50, "Code",ExpressionUUID->"6d38f38b-0f4d-4855-abde-a2c88217556d"],
-Cell[470859, 7958, 231, 5, 32, "Output",ExpressionUUID->"a2beddc1-f6d2-4744-b942-6383a37a6357"]
+Cell[19456, 468, 135, 2, 50, "Code",ExpressionUUID->"5ffce66d-44ff-4a4d-8b04-4012f92f3601"],
+Cell[19594, 472, 1843, 41, 382, "Output",ExpressionUUID->"190d63c2-e441-456a-a263-38d62fa154bb"]
 }, Open  ]],
-Cell[471105, 7966, 93, 0, 50, "Code",ExpressionUUID->"b2c7a435-9f0b-4b04-bee6-df88e5b934e8"],
-Cell[471201, 7968, 283, 6, 122, "Text",ExpressionUUID->"6c1644e7-1c72-4382-8144-2310d5b6a58c"],
-Cell[471487, 7976, 80, 3, 56, "Text",ExpressionUUID->"2a540091-251c-4ca0-ba25-8d41997a316a"]
+Cell[21452, 516, 137, 2, 67, "Input",ExpressionUUID->"b4018bb5-01eb-433d-8903-18dd6c51f90d"],
+Cell[21592, 520, 2169, 49, 149, "Text",ExpressionUUID->"49c72b68-33fa-44f8-b4f3-b61ae7d94156"],
+Cell[23764, 571, 165, 3, 34, "Text",ExpressionUUID->"2221af54-6fcd-4eea-839b-38c5e7281103"],
+Cell[23932, 576, 438080, 7187, 365, 319191, 5237, "CachedBoxData", "BoxData", "Input",ExpressionUUID->"2993fea4-d843-40bd-a2db-1cac3e950890"],
+Cell[462015, 7765, 810, 15, 124, "Input",ExpressionUUID->"19688ffd-3847-4ca7-9e1a-d9ad8c7bf4d2"],
+Cell[CellGroupData[{
+Cell[462850, 7784, 298, 5, 28, "Input",ExpressionUUID->"3baf7725-449e-4377-81a6-84887cbc57a4"],
+Cell[463151, 7791, 798, 14, 90, "Output",ExpressionUUID->"b795e077-945d-4a87-9460-50fdea7df2b6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[471604, 7984, 88, 0, 67, "Section",ExpressionUUID->"a35b84c8-f67a-4bec-84b4-76130279c1c5"],
-Cell[471695, 7986, 152, 4, 78, "Text",ExpressionUUID->"15e65a8a-231d-4ae7-ab46-64b620480598"],
-Cell[471850, 7992, 91, 0, 50, "Code",ExpressionUUID->"a71f481f-e8e6-45a8-8e80-8b8b88fe9141"],
-Cell[471944, 7994, 236, 4, 56, "Text",ExpressionUUID->"3b163901-8f36-48e9-915c-463793a83f49"],
+Cell[463986, 7810, 457, 8, 28, "Input",ExpressionUUID->"f07d628c-b2e6-4418-8409-e222e41da4b3"],
+Cell[464446, 7820, 871, 15, 123, "Output",ExpressionUUID->"065ff5de-185b-44fa-ab9e-70644da9cc50"]
+}, Open  ]],
+Cell[465332, 7838, 392, 11, 69, "Code",ExpressionUUID->"d8cf02c0-7a3c-4e25-9fe3-bce467ab5e3e"],
+Cell[465727, 7851, 267, 6, 34, "Text",ExpressionUUID->"de7e6365-7b3d-4a4d-a71f-97d05f1b128b"],
+Cell[465997, 7859, 816, 23, 28, "Input",ExpressionUUID->"4c78d862-7075-4e7e-8032-5be8d0f381ff"]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[472205, 8002, 533, 14, 48, "Input",ExpressionUUID->"aa6c8887-5d32-48d2-a8b1-079e880e1a55"],
-Cell[472741, 8018, 987, 19, 21, "Message",ExpressionUUID->"04937b1a-0f42-405c-b6b1-e03a67f0cb1a"],
-Cell[473731, 8039, 389, 10, 32, "Output",ExpressionUUID->"adb34504-9143-45d6-8764-cf691e5c2ff6"]
+Cell[466850, 7887, 84, 0, 67, "Section",ExpressionUUID->"5a8f4617-8222-4b97-b08f-f3f62d800d18"],
+Cell[466937, 7889, 163, 3, 34, "Text",ExpressionUUID->"61caef2a-09cc-4133-bd81-2c0a3078e76b"],
+Cell[467103, 7894, 87, 0, 28, "Input",ExpressionUUID->"9ea463f5-f857-4af4-be5f-f4d42452a85b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[467227, 7899, 111, 0, 67, "Section",ExpressionUUID->"4935ccaa-2d57-4a61-8905-75ca565a0ab6"],
+Cell[467341, 7901, 89, 0, 28, "Input",ExpressionUUID->"05128870-3382-4a05-8113-1312c78b115f"],
+Cell[467433, 7903, 91, 0, 28, "Input",ExpressionUUID->"8855762b-ae99-482d-aaef-cf4d6580d87b"],
+Cell[CellGroupData[{
+Cell[467549, 7907, 134, 2, 50, "Code",ExpressionUUID->"6d38f38b-0f4d-4855-abde-a2c88217556d"],
+Cell[467686, 7911, 231, 5, 32, "Output",ExpressionUUID->"a2beddc1-f6d2-4744-b942-6383a37a6357"]
+}, Open  ]],
+Cell[467932, 7919, 93, 0, 50, "Code",ExpressionUUID->"b2c7a435-9f0b-4b04-bee6-df88e5b934e8"],
+Cell[468028, 7921, 283, 6, 122, "Text",ExpressionUUID->"6c1644e7-1c72-4382-8144-2310d5b6a58c"],
+Cell[468314, 7929, 80, 3, 56, "Text",ExpressionUUID->"2a540091-251c-4ca0-ba25-8d41997a316a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[468431, 7937, 88, 0, 67, "Section",ExpressionUUID->"a35b84c8-f67a-4bec-84b4-76130279c1c5"],
+Cell[468522, 7939, 152, 4, 78, "Text",ExpressionUUID->"15e65a8a-231d-4ae7-ab46-64b620480598"],
+Cell[468677, 7945, 91, 0, 50, "Code",ExpressionUUID->"a71f481f-e8e6-45a8-8e80-8b8b88fe9141"],
+Cell[468771, 7947, 236, 4, 56, "Text",ExpressionUUID->"3b163901-8f36-48e9-915c-463793a83f49"],
+Cell[CellGroupData[{
+Cell[469032, 7955, 533, 14, 48, "Input",ExpressionUUID->"aa6c8887-5d32-48d2-a8b1-079e880e1a55"],
+Cell[469568, 7971, 987, 19, 21, "Message",ExpressionUUID->"04937b1a-0f42-405c-b6b1-e03a67f0cb1a"],
+Cell[470558, 7992, 389, 10, 32, "Output",ExpressionUUID->"adb34504-9143-45d6-8764-cf691e5c2ff6"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[474169, 8055, 85, 0, 67, "Section",ExpressionUUID->"5469d251-1dcd-45b3-8592-6da32a4eec41"],
-Cell[474257, 8057, 87, 0, 28, "Input",ExpressionUUID->"457f18cf-636c-4d4d-b249-dba5f42d8ff4"]
+Cell[470996, 8008, 85, 0, 67, "Section",ExpressionUUID->"5469d251-1dcd-45b3-8592-6da32a4eec41"],
+Cell[471084, 8010, 87, 0, 28, "Input",ExpressionUUID->"457f18cf-636c-4d4d-b249-dba5f42d8ff4"],
+Cell[471174, 8012, 381, 7, 28, "Input",ExpressionUUID->"0e59d5e5-80a7-479b-976d-ea76b01ab41c"],
+Cell[471558, 8021, 268, 5, 28, "Input",ExpressionUUID->"f832fbf6-ca7b-439e-a115-502089bea379"],
+Cell[471829, 8028, 313, 7, 28, "Input",ExpressionUUID->"da96dbe1-62db-4d9c-9cd1-c1df7df043df"],
+Cell[472145, 8037, 342, 6, 48, "Input",ExpressionUUID->"8381f089-6000-4797-a5a3-927aebda5d86"]
 }, Open  ]]
 }, Open  ]]
 }
