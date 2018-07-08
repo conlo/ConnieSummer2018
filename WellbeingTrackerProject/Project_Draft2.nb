@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[     27693,        621]
-NotebookOptionsPosition[     24540,        567]
-NotebookOutlinePosition[     24905,        583]
-CellTagsIndexPosition[     24862,        580]
+NotebookDataLength[     37628,        870]
+NotebookOptionsPosition[     33281,        797]
+NotebookOutlinePosition[     33646,        813]
+CellTagsIndexPosition[     33603,        810]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -333,30 +333,36 @@ Cell[BoxData[
  RowBox[{
   RowBox[{
    RowBox[{
-    RowBox[{"countSentiments", "[", " ", "text_String", " ", "]"}], " ", ":=",
-     " ", 
-    RowBox[{"Module", "[", 
+    RowBox[{
      RowBox[{
-      RowBox[{"{", 
-       RowBox[{"sentences", ",", " ", "words"}], "}"}], ",", "\n", "\t", 
-      RowBox[{
-       RowBox[{"sentences", " ", "=", " ", 
-        RowBox[{"TextCases", "[", 
-         RowBox[{"text", ",", " ", "\"\<Sentence\>\""}], "]"}]}], ";", "\n", 
-       "\t", 
-       RowBox[{"words", " ", "=", " ", 
-        RowBox[{"TextCases", "[", 
-         RowBox[{"text", ",", " ", "\"\<Word\>\""}], "]"}]}], ";", "\n", "\t", 
-       RowBox[{"Classify", "[", 
-        RowBox[{
-        "\"\<Sentiment\>\"", ",", " ", "sentences", ",", " ", 
-         "\"\<Probabilities\>\""}], "]"}], ";", "\n", "\t", 
-       RowBox[{"Counts", "[", 
+      RowBox[{"countSentiments", "[", " ", "text_String", " ", "]"}], " ", ":=",
+       " ", 
+      RowBox[{"Module", "[", 
+       RowBox[{
         RowBox[{"{", 
-         RowBox[{
-         "\"\<Neutral;\>\"", ",", "\"\<Positive\>\"", ",", 
-          "\"\<Indeterminate\>\""}], "}"}], "]"}], ";"}]}], "\n", 
-     "\t\t\t\t\t\t\t\t\t\t", "]"}]}], ";"}], "\[IndentingNewLine]", 
+         RowBox[{"sentences", ",", " ", "words", ",", " ", "listCounts"}], 
+         "}"}], ",", "\n", "\t", 
+        RowBox[{
+         RowBox[{"sentences", " ", "=", " ", 
+          RowBox[{"TextCases", "[", 
+           RowBox[{"text", ",", " ", "\"\<Sentence\>\""}], "]"}]}], ";", "\n",
+          "\t", 
+         RowBox[{"words", " ", "=", " ", 
+          RowBox[{"TextCases", "[", 
+           RowBox[{"text", ",", " ", "\"\<Word\>\""}], "]"}]}], ";", "\n", 
+         "\t", 
+         RowBox[{"Classify", "[", 
+          RowBox[{
+          "\"\<Sentiment\>\"", ",", " ", "sentences", ",", " ", 
+           "\"\<Probabilities\>\""}], "]"}], ";", "\n", "\t", 
+         RowBox[{"listCounts", " ", "=", " ", 
+          RowBox[{"Counts", "[", 
+           RowBox[{"{", 
+            RowBox[{
+            "\"\<Neutral\>\"", ",", "\"\<Positive\>\"", ",", 
+             "\"\<Indeterminate\>\""}], "}"}], "]"}]}], ";"}]}], "\n", 
+       "\t\t\t\t\t\t\t\t\t\t", "]"}]}], ";"}], "\n", "\t\t\t\t\t\t\t\t\t\t", 
+    "\n", "\t", "listCounts", "\[IndentingNewLine]"}], "\t", "]"}], 
   "\n"}]], "Code",
  CellChangeTimes->{{3.7400484364199505`*^9, 3.740048437331965*^9}, {
    3.740048476057172*^9, 3.7400484825773196`*^9}, {3.740048516945553*^9, 
@@ -366,8 +372,9 @@ Cell[BoxData[
    3.7400497252806683`*^9}, {3.7400497920921097`*^9, 3.740049904695176*^9}, {
    3.7400499653405805`*^9, 3.740050005491063*^9}, {3.7400500619141417`*^9, 
    3.7400501408023005`*^9}, {3.7400509485456305`*^9, 3.74005099479827*^9}, 
-   3.7400526163710384`*^9, {3.7400526701627965`*^9, 
-   3.740052679258986*^9}},ExpressionUUID->"ec3d6ee7-62f4-4a3b-93ed-\
+   3.7400526163710384`*^9, {3.7400526701627965`*^9, 3.740052679258986*^9}, {
+   3.740052770363517*^9, 3.740052822794345*^9}, {3.7400528721402125`*^9, 
+   3.7400529038721313`*^9}},ExpressionUUID->"ec3d6ee7-62f4-4a3b-93ed-\
 c9e617bac4e6"],
 
 Cell[BoxData[{
@@ -561,11 +568,234 @@ Cell[BoxData[
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.7400488776276083`*^9, 
   3.740048881940205*^9}},ExpressionUUID->"f4a265d3-8787-4756-9f52-\
-057970b9d74d"]
+057970b9d74d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ageForm", " ", "=", " ", 
+  RowBox[{"FormFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<age\>\"", "\[Rule]", " ", "\"\<String\>\""}], ",", " ", 
+      RowBox[{
+      "\"\<Resting Heart Rate\>\"", " ", "\[Rule]", " ", "\"\<Number\>\""}]}],
+      "}"}], ",", "f"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7400531854058833`*^9, 3.740053222633317*^9}, {
+  3.7400533129759226`*^9, 3.740053347823496*^9}, {3.7400534271938705`*^9, 
+  3.7400534466174107`*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"ce2fc613-3873-4561-b198-b7f11b60b0e6"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["FormFunction",
+    "SummaryHead"], "[", 
+   TemplateBox[{DynamicModuleBox[{Forms`Format`PackagePrivate`values$$}, 
+      DynamicBox[
+       ToBoxes[
+        If[
+         ValueQ[Forms`Format`PackagePrivate`values$$], 
+         Column[{
+           Panel[
+            Style[
+             $CellContext`f[Forms`Format`PackagePrivate`values$$], "Output", 
+             "StandardForm"], Background -> White], 
+           Item[
+            Row[{
+              Spacer[0], 
+              Forms`Format`PackagePrivate`formCancelButton["Back", 
+               Clear[Forms`Format`PackagePrivate`values$$], 
+               FormObject[
+                Association[
+                "age" -> Association["Interpreter" -> "String"], 
+                 "Resting Heart Rate" -> 
+                 Association["Interpreter" -> "Number"]]][
+               AppearanceRules, "FormCancelButtonStyle"]]}], Alignment -> 
+            Right]}, Alignment -> Right], 
+         Forms`Format`PackagePrivate`values$$; Forms`PackageScope`bindForm[
+           Forms`PackageScope`changeAppearanceRule[
+            FormObject[
+             Association[
+             "age" -> Association["Interpreter" -> "String"], 
+              "Resting Heart Rate" -> 
+              Association["Interpreter" -> "Number"]]], "CancelLabel" -> 
+            None], Forms`Format`PackagePrivate`values$$]], StandardForm], 
+       ImageSizeCache -> {337., {56., 61.}}, 
+       TrackedSymbols :> {Forms`Format`PackagePrivate`values$$}], 
+      DynamicModuleValues :> {}]},
+    "FormPanel"], "]"}],
+  FormFunction[
+   FormObject[
+    Association[
+    "age" -> Association["Interpreter" -> "String"], "Resting Heart Rate" -> 
+     Association["Interpreter" -> "Number"]]], $CellContext`f],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.740053447181356*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"c243345e-7ee2-457c-b587-ab40f0baedde"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", "ageForm", "]"}]], "Input",
+ CellChangeTimes->{{3.7400534513482904`*^9, 3.7400534684497995`*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"34b4ff78-d1e2-467e-8433-d90034f3c058"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/objects/56cb6367-8e78-4736-9355-\
+9951e8c6948d\"",
+     "https://www.wolframcloud.com/objects/56cb6367-8e78-4736-9355-\
+9951e8c6948d"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/56cb6367-8e78-4736-9355-9951e8c6948d"],
+  SelectWithContents->True]], "Output",
+ CellChangeTimes->{3.740053469670046*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"00fb7b8d-18f3-4a1d-8cb9-b278c01ea6a0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"<<", "HTTPHandling"}], "'"}]], "Input",
+ CellChangeTimes->{{3.740053489265785*^9, 3.740053497221041*^9}, {
+  3.740053875747744*^9, 3.740053883722437*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"a4e01cab-8184-45df-b9ef-bfeac5ceb931"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","noopen",
+   "\"Cannot open \\!\\(\\*RowBox[{\\\"\\\\\\\"HTTPHandling\\\\\\\"\\\"}]\\).\
+\"",2,31,10,30536178137787048421,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.740053884651232*^9},
+ CellLabel->
+  "During evaluation of \
+In[31]:=",ExpressionUUID->"352ec37d-dcc7-442c-ba3d-f6e93608d825"],
+
+Cell[BoxData[
+ SuperscriptBox["$Failed", "\[Prime]",
+  MultilineFunction->None]], "Output",
+ CellChangeTimes->{3.7400538846547065`*^9},
+ CellLabel->"Out[31]=",ExpressionUUID->"c56b0a6d-ebb6-4871-89c6-73e145a3d0e1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StartWebServer", "[", "\[IndentingNewLine]", 
+  RowBox[{"FormFunction", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<age\>\"", "\[Rule]", " ", "\"\<String\>\""}], ",", " ", 
+      RowBox[{
+      "\"\<Resting Heart Rate\>\"", " ", "\[Rule]", " ", "\"\<Number\>\""}]}],
+      "}"}], ",", "f"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7400538914923525`*^9, 3.7400540102875943`*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"5632fdf0-1f11-4e79-a950-f96adc828180"],
+
+Cell[BoxData[
+ RowBox[{"StartWebServer", "[", 
+  InterpretationBox[
+   RowBox[{
+    TagBox["FormFunction",
+     "SummaryHead"], "[", 
+    TemplateBox[{DynamicModuleBox[{Forms`Format`PackagePrivate`values$$}, 
+       DynamicBox[
+        ToBoxes[
+         If[
+          ValueQ[Forms`Format`PackagePrivate`values$$], 
+          Column[{
+            Panel[
+             Style[
+              $CellContext`f[Forms`Format`PackagePrivate`values$$], "Output", 
+              "StandardForm"], Background -> White], 
+            Item[
+             Row[{
+               Spacer[0], 
+               Forms`Format`PackagePrivate`formCancelButton["Back", 
+                Clear[Forms`Format`PackagePrivate`values$$], 
+                FormObject[
+                 Association[
+                 "age" -> Association["Interpreter" -> "String"], 
+                  "Resting Heart Rate" -> 
+                  Association["Interpreter" -> "Number"]]][
+                AppearanceRules, "FormCancelButtonStyle"]]}], Alignment -> 
+             Right]}, Alignment -> Right], 
+          Forms`Format`PackagePrivate`values$$; Forms`PackageScope`bindForm[
+            Forms`PackageScope`changeAppearanceRule[
+             FormObject[
+              Association[
+              "age" -> Association["Interpreter" -> "String"], 
+               "Resting Heart Rate" -> 
+               Association["Interpreter" -> "Number"]]], "CancelLabel" -> 
+             None], Forms`Format`PackagePrivate`values$$]], StandardForm], 
+        ImageSizeCache -> {337., {56., 61.}}, 
+        TrackedSymbols :> {Forms`Format`PackagePrivate`values$$}], 
+       DynamicModuleValues :> {}]},
+     "FormPanel"], "]"}],
+   FormFunction[
+    FormObject[
+     Association[
+     "age" -> Association["Interpreter" -> "String"], "Resting Heart Rate" -> 
+      Association["Interpreter" -> "Number"]]], $CellContext`f],
+   Editable->False,
+   SelectWithContents->True,
+   Selectable->False], "]"}]], "Output",
+ CellChangeTimes->{3.740054011094117*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"9769d584-8239-489c-b279-afe6887111ce"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"bin", " ", "=", " ", 
+   RowBox[{"CreateDatabin", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{"FormFunction", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\"\<age\>\"", "\[Rule]", " ", "\"\<String\>\""}], ",", " ", 
+      RowBox[{
+      "\"\<Resting Heart Rate\>\"", " ", "\[Rule]", " ", "\"\<Number\>\""}]}],
+      "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"DatabinAdd", "[", "bin", "]"}], ";", "\[IndentingNewLine]", 
+       "\"\<Thanks for submitting your data to Hearty! \>\""}], ")"}], 
+     "&"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Dataset", "[", "bin", "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.7400540418177133`*^9, 3.7400542807265406`*^9}},
+ CellLabel->"In[35]:=",ExpressionUUID->"84e06f4e-52b3-4aeb-b58f-292e41683774"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"CloudObject", "[", 
+   TemplateBox[{
+    "\"https://www.wolframcloud.com/objects/019ce41d-0cfd-4c92-b90f-\
+f5d16aa80fc2\"",
+     "https://www.wolframcloud.com/objects/019ce41d-0cfd-4c92-b90f-\
+f5d16aa80fc2"},
+    "HyperlinkURL"], "]"}],
+  CloudObject[
+  "https://www.wolframcloud.com/objects/019ce41d-0cfd-4c92-b90f-f5d16aa80fc2"],
+  SelectWithContents->True]], "Input",
+ CellChangeTimes->{3.740055811970019*^9},
+ CellLabel->"In[38]:=",ExpressionUUID->"4b67b283-5809-4173-8182-6e493c31d2eb"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{780, 812},
+WindowSize->{766, 812},
 WindowMargins->{{Automatic, -7}, {Automatic, 0}},
 WindowStatusArea->None,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 7, 2018)",
@@ -607,20 +837,39 @@ Cell[11338, 260, 291, 5, 28, "Input",ExpressionUUID->"34fb2f07-8112-4690-82e3-ff
 Cell[11632, 267, 2121, 32, 147, "Output",ExpressionUUID->"4a628d88-9238-4738-959c-2f6b9ff7b5e0"]
 }, Open  ]],
 Cell[13768, 302, 1361, 27, 181, "Input",ExpressionUUID->"f7abcc51-d28d-4295-b5b8-eab85fd46779"],
-Cell[15132, 331, 1790, 39, 177, "Code",ExpressionUUID->"ec3d6ee7-62f4-4a3b-93ed-c9e617bac4e6"],
-Cell[16925, 372, 483, 12, 48, "Input",ExpressionUUID->"7ab27a9f-31ae-4491-b4ca-6c50531ecaa6"],
-Cell[17411, 386, 407, 9, 48, "Input",ExpressionUUID->"d4f83914-e56e-4e29-89e7-9a4d134c4835"],
-Cell[17821, 397, 3378, 76, 321, "Code",ExpressionUUID->"0a491de3-0d19-4492-827a-801a78cea079"],
-Cell[21202, 475, 154, 3, 28, "Input",ExpressionUUID->"f7beb359-df77-43b7-a0a7-7fc9e49ef962"],
-Cell[21359, 480, 325, 8, 28, "Input",ExpressionUUID->"2caf840e-0612-4ba0-bc41-ccd6f4f92f54"],
-Cell[21687, 490, 80, 0, 50, "Code",ExpressionUUID->"4d8bac83-6d2a-4c6f-9f23-d47223df2abc"],
-Cell[21770, 492, 441, 11, 48, "Input",ExpressionUUID->"fc1f2dc9-ec3c-4a3e-a396-ccd156200784"],
-Cell[22214, 505, 392, 11, 69, "Code",ExpressionUUID->"d8cf02c0-7a3c-4e25-9fe3-bce467ab5e3e"],
+Cell[15132, 331, 2138, 46, 213, "Code",ExpressionUUID->"ec3d6ee7-62f4-4a3b-93ed-c9e617bac4e6"],
+Cell[17273, 379, 483, 12, 48, "Input",ExpressionUUID->"7ab27a9f-31ae-4491-b4ca-6c50531ecaa6"],
+Cell[17759, 393, 407, 9, 48, "Input",ExpressionUUID->"d4f83914-e56e-4e29-89e7-9a4d134c4835"],
+Cell[18169, 404, 3378, 76, 321, "Code",ExpressionUUID->"0a491de3-0d19-4492-827a-801a78cea079"],
+Cell[21550, 482, 154, 3, 28, "Input",ExpressionUUID->"f7beb359-df77-43b7-a0a7-7fc9e49ef962"],
+Cell[21707, 487, 325, 8, 28, "Input",ExpressionUUID->"2caf840e-0612-4ba0-bc41-ccd6f4f92f54"],
+Cell[22035, 497, 80, 0, 50, "Code",ExpressionUUID->"4d8bac83-6d2a-4c6f-9f23-d47223df2abc"],
+Cell[22118, 499, 441, 11, 48, "Input",ExpressionUUID->"fc1f2dc9-ec3c-4a3e-a396-ccd156200784"],
+Cell[22562, 512, 392, 11, 69, "Code",ExpressionUUID->"d8cf02c0-7a3c-4e25-9fe3-bce467ab5e3e"],
 Cell[CellGroupData[{
-Cell[22631, 520, 517, 11, 67, "Input",ExpressionUUID->"ae5254dc-b3d8-41fb-a983-eb81d292a3a8"],
-Cell[23151, 533, 1192, 24, 71, "Output",ExpressionUUID->"b3f311f9-71ea-43e9-b257-2d37a011f54e"]
+Cell[22979, 527, 517, 11, 67, "Input",ExpressionUUID->"ae5254dc-b3d8-41fb-a983-eb81d292a3a8"],
+Cell[23499, 540, 1192, 24, 71, "Output",ExpressionUUID->"b3f311f9-71ea-43e9-b257-2d37a011f54e"]
 }, Open  ]],
-Cell[24358, 560, 154, 3, 28, "Input",ExpressionUUID->"f4a265d3-8787-4756-9f52-057970b9d74d"]
+Cell[24706, 567, 154, 3, 28, "Input",ExpressionUUID->"f4a265d3-8787-4756-9f52-057970b9d74d"],
+Cell[CellGroupData[{
+Cell[24885, 574, 590, 13, 28, "Input",ExpressionUUID->"ce2fc613-3873-4561-b198-b7f11b60b0e6"],
+Cell[25478, 589, 1982, 48, 198, "Output",ExpressionUUID->"c243345e-7ee2-457c-b587-ab40f0baedde"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27497, 642, 219, 3, 28, "Input",ExpressionUUID->"34b4ff78-d1e2-467e-8433-d90034f3c058"],
+Cell[27719, 647, 537, 13, 35, "Output",ExpressionUUID->"00fb7b8d-18f3-4a1d-8cb9-b278c01ea6a0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28293, 665, 268, 5, 28, "Input",ExpressionUUID->"a4e01cab-8184-45df-b9ef-bfeac5ceb931"],
+Cell[28564, 672, 356, 9, 21, "Message",ExpressionUUID->"352ec37d-dcc7-442c-ba3d-f6e93608d825"],
+Cell[28923, 683, 214, 4, 32, "Output",ExpressionUUID->"c56b0a6d-ebb6-4871-89c6-73e145a3d0e1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29174, 692, 513, 11, 48, "Input",ExpressionUUID->"5632fdf0-1f11-4e79-a950-f96adc828180"],
+Cell[29690, 705, 2068, 49, 198, "Output",ExpressionUUID->"9769d584-8239-489c-b279-afe6887111ce"]
+}, Open  ]],
+Cell[31773, 757, 941, 21, 143, "Input",ExpressionUUID->"84e06f4e-52b3-4aeb-b58f-292e41683774"],
+Cell[32717, 780, 536, 13, 31, InheritFromParent,ExpressionUUID->"4b67b283-5809-4173-8182-6e493c31d2eb"]
 }, Open  ]]
 }, Open  ]]
 }
