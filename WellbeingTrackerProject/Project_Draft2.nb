@@ -1,0 +1,299 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[     12891,        291]
+NotebookOptionsPosition[     11287,        259]
+NotebookOutlinePosition[     11628,        274]
+CellTagsIndexPosition[     11585,        271]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["WellBeing Tracker Project ", "Title",ExpressionUUID->"77b23c8c-282e-4e1f-bb58-415c31e8453a"],
+
+Cell[TextData[{
+ "Goal: Use machine learning to help predict when people will feel stressed \
+and be prone to making mistakes. It will look for patterns of mood and \
+activities that the user inputs, identify stress factors, and send a reminder \
+or warning message to the user when the algorithm determines it would be \
+helpful.\n\nNew Focus: Notification Aspect of Mood tracking apps\n",
+ ButtonBox["http://web.mit.edu/bentley/www/papers/reminders-note-forAC.pdf\n",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://web.mit.edu/bentley/www/papers/reminders-note-forAC.pdf"], 
+    None},
+  ButtonNote->
+   "http://web.mit.edu/bentley/www/papers/reminders-note-forAC.pdf"],
+ "Apple watch apps from wolfram mathematica: \
+http://blog.wolfram.com/2015/04/28/instant-apps-for-the-apple-watch-with-the-\
+wolfram-language/",
+ ButtonBox["\n",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://web.mit.edu/bentley/www/papers/reminders-note-forAC.pdf"], 
+    None},
+  ButtonNote->
+   "http://web.mit.edu/bentley/www/papers/reminders-note-forAC.pdf"],
+ "\nmake an option with manipulate to go back and make scenarios where you \
+can see how your week could hypothetically could have been if you for example \
+you ate 1 more serving of fruit\n\[OpenCurlyDoubleQuote]Second, users usually \
+tend to self-report data after the event to be recorded has occurred. In \
+fact,\noften it is not feasible for the user to interrupt her activity in \
+order to record what she feels.\nHowever, when the user is reminded of \
+reporting the data, it is often too late to recollect\nthe exact experienced \
+emotional states\[CloseCurlyDoubleQuote](Computers page 3)\n\nSupporting \
+users in the retrospective reconstruction of emotions. Since people\
+\[CloseCurlyQuote]s reports of their\nemotions reflect whatever information \
+is accessible at the time [24], we aim to provide people with\nsome hints in \
+order to recall the experience where the emotions arose. This would allow the \
+user\nto connect her emotional states to the places visited, the people met, \
+and the task accomplished,\nand, through them, remember what happened to her \
+during the day and report her emotions\nmore faithfully, in a way as similar \
+as possible to how it actually happened (trying to avoid the\ninfluence of \
+beliefs).(computers page 4)\nloading page is a get request \n\ncloud deploy \
+with an api functon\n\nData Entries:\nGoogle Form for mood daily logs:\n",
+ ButtonBox["https://docs.google.com/forms/d/12bnXVh8ggOZ5qTDeQxSybTICTjNi1-\
+iyq4XpFTgEZfY/viewform?c=0&w=1&edit_requested=true #responses\n\nNeed to \
+learn about how to quantify stress, draw from existing mood apps, and clarify \
+goal for this project",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://docs.google.com/forms/d/12bnXVh8ggOZ5qTDeQxSybTICTjNi1-\
+iyq4XpFTgEZfY/viewform?c=0&w=1&edit_requested=true#responses"], None},
+  ButtonNote->
+   "https://docs.google.com/forms/d/12bnXVh8ggOZ5qTDeQxSybTICTjNi1-\
+iyq4XpFTgEZfY/viewform?c=0&w=1&edit_requested=true#responses"],
+ "\n",
+ ButtonBox["https://yalantis.com/blog/best-mood-tracking-mobile-apps-and-how-\
+to-develop-one/",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["https://yalantis.com/blog/best-mood-tracking-mobile-apps-and-how-to-\
+develop-one/"], None},
+  ButtonNote->
+   "https://yalantis.com/blog/best-mood-tracking-mobile-apps-and-how-to-\
+develop-one/"],
+ "\n\n",
+ ButtonBox["http://technori.com/2018/04/4281-the-beginners-guide-to-\
+quantified-self-plus-a-list-of-the-best-personal-data-tools-out-there/",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://technori.com/2018/04/4281-the-beginners-guide-to-quantified-\
+self-plus-a-list-of-the-best-personal-data-tools-out-there/"], None},
+  ButtonNote->
+   "http://technori.com/2018/04/4281-the-beginners-guide-to-quantified-self-\
+plus-a-list-of-the-best-personal-data-tools-out-there/"]
+}], "Text",
+ CellChangeTimes->{{3.7397219765285034`*^9, 3.739722007307809*^9}, {
+  3.739874499762586*^9, 3.739874555512154*^9}, {3.7398780582191944`*^9, 
+  3.739878077763379*^9}, {3.7398816409276743`*^9, 3.73988166340961*^9}, {
+  3.7398904178870544`*^9, 3.7398904193969746`*^9}, {3.739894307880969*^9, 
+  3.7398943281051354`*^9}, {3.7398944553892035`*^9, 3.7398944737835026`*^9}, {
+  3.739895407270898*^9, 3.7398954316547794`*^9}, {3.7400073464990644`*^9, 
+  3.740007361803775*^9}},ExpressionUUID->"10671abf-5da5-48de-b673-\
+42c08fd61662"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7398951621982536`*^9, 
+  3.73989516546365*^9}},ExpressionUUID->"b419b030-308e-41f5-bb6b-\
+e17e7d526d66"],
+
+Cell[CellGroupData[{
+
+Cell["Text/Sentiment Analysis", "Section",ExpressionUUID->"0bfd5a6d-4108-4c80-b0c1-e6824932cd95"],
+
+Cell["\<\
+Take in sentences that people put in and use the dependency of words in an \
+accumulated list to create correlations between sentiment and activities
+Word embedding in context?\
+\>", "Text",ExpressionUUID->"87743ee2-4d06-4fd5-b4b9-4431bae380e5"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7400089459630384`*^9, 
+  3.7400089464837494`*^9}},ExpressionUUID->"b4018bb5-01eb-433d-8903-\
+18dd6c51f90d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+   "ELMo", " ", "Contextual", " ", "Word", " ", "Representations", " ", 
+    "Trained", " ", "on", " ", "1", "B", " ", "Word", " ", 
+    RowBox[{"Benchmark", ":", " ", 
+     RowBox[{
+      RowBox[{
+      "Represent", " ", "words", " ", "as", " ", "contextual", " ", "word"}], 
+      "-", 
+      RowBox[{"embedding", " ", "vectors"}]}], ":", " ", "\n", "\t", 
+     RowBox[{
+     "Produces", " ", "three", " ", "vectors", " ", "per", " ", "token"}]}]}],
+    ",", " ", 
+   RowBox[{"two", " ", "of", " ", "which", " ", "are", " ", "contextual"}], 
+   ",", " ", 
+   RowBox[{
+    RowBox[{
+    "meaning", " ", "that", " ", "they", " ", "depend", " ", "on", " ", "the",
+      " ", "entire", " ", "sentence", " ", "in", " ", "which", " ", "they", 
+     " ", "are", " ", 
+     RowBox[{"used", ".", " ", "These"}], " ", "word", " ", "vectors", " ", 
+     "are", " ", "aimed", " ", "at", " ", "being", " ", "linearly", " ", 
+     RowBox[{"combined", ".", " ", "They"}], " ", "are", " ", "based", " ", 
+     "on", " ", "the", " ", "characters", " ", "and", " ", "case"}], "-", 
+    "sensitive"}], ",", " ", 
+   RowBox[{"so", " ", "there", " ", "is", " ", "no", " ", "token", " ", 
+    RowBox[{"dictionary", ".", "\n", 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"https", ":"}], "//", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"resources", ".", "wolframcloud", ".", "com"}], "/", 
+           "NeuralNetRepository"}], "/", "resources"}], "/", "ELMo"}], "-", 
+        "Contextual", "-", "Word", "-", "Representations", "-", "Trained", 
+        "-", "on", "-", 
+        RowBox[{"1", "B"}], "-", "Word", "-", "Benchmark", " "}]}],
+      BaseStyle->"Hyperlink",
+      ButtonData->{
+        URL[
+        "https://resources.wolframcloud.com/NeuralNetRepository/resources/\
+ELMo-Contextual-Word-Representations-Trained-on-1B-Word-Benchmark"], None},
+      ButtonNote->
+       "https://resources.wolframcloud.com/NeuralNetRepository/resources/ELMo-\
+Contextual-Word-Representations-Trained-on-1B-Word-Benchmark"]}]}]}], 
+  "\n"}]], "Text",ExpressionUUID->"49c72b68-33fa-44f8-b4f3-b61ae7d94156"],
+
+Cell["\<\
+Need to input the text, separate into sentences, and analyze sentiment \
+holistically:\
+\>", "Text",ExpressionUUID->"2221af54-6fcd-4eea-839b-38c5e7281103"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{
+  3.7400091134372597`*^9},ExpressionUUID->"2993fea4-d843-40bd-a2db-\
+1cac3e950890"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+    "text", "=", 
+     "\"\<I am feeling peaceful. Watched the sun rise and heard the birds \
+chirp a beautiful good morning song. I caught up on slack messages and smiled \
+at the intellectual curiousity and genuine helpfulness of students and \
+instructors working together to do something amazing. Being a part of such a \
+wonderful, diverse group of people coming together regardless of differences \
+in backgrounds, religion, race and gender is inspiring. Stretching sore \
+muscles (body and brain) reminds me both have been worked, and it feels good.\
+\>\""}], ";"}], "\n"}], "Input"]], "Input",
+ CellChangeTimes->{{3.7398275585744543`*^9, 3.7398275926565323`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"19688ffd-3847-4ca7-9e1a-d9ad8c7bf4d2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sentences", " ", "=", " ", 
+  RowBox[{"TextCases", "[", 
+   RowBox[{"text", ",", " ", "\"\<Sentence\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7398276306838384`*^9, 3.7398276621192865`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"3baf7725-449e-4377-81a6-84887cbc57a4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"I am feeling peaceful.\"\>", 
+   ",", "\<\"Watched the sun rise and heard the birds chirp a beautiful good \
+morning song.\"\>", 
+   ",", "\<\"I caught up on slack messages and smiled at the intellectual \
+curiousity and genuine helpfulness of students and instructors working \
+together to do something amazing.\"\>", 
+   ",", "\<\"Being a part of such a wonderful, diverse group of people coming \
+together regardless of differences in backgrounds, religion, race and gender \
+is inspiring.\"\>", 
+   ",", "\<\"Stretching sore muscles (body and brain) reminds me both have \
+been worked, and it feels good.\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.739827673142747*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"b795e077-945d-4a87-9460-50fdea7df2b6"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+  "ResourceObject", "[", 
+   "\"\<ELMo Contextual Word Representations Trained on 1B Word \
+Benchmark\>\"", "]"}], ";"}], "\n", 
+ RowBox[{"embeddings", " ", "=", " ", 
+  RowBox[{
+  "NetModel", "[", 
+   "\"\<ELMo Contextual Word Representations Trained on 1B Word \
+Benchmark\>\"", "]"}]}]}], "Code",ExpressionUUID->"d8cf02c0-7a3c-4e25-9fe3-\
+bce467ab5e3e"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+  "Make", " ", "list", " ", "of", " ", "how", " ", "often", " ", "sentences", 
+   " ", "with", " ", "activity", " ", "names", " ", "are", " ", "classified", 
+   " ", "as", " ", "positive", " ", "and", " ", "negative", " ", "and", " ", 
+   "use", " ", "the", " ", "probability", " ", "as", " ", "a", " ", "way", 
+   " ", "of", " ", "making", " ", "a", " ", "ranking", " ", "system"}], " ", 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.7400115802841682`*^9, 3.7400116365743303`*^9}, {
+  3.7400116683749323`*^9, 
+  3.740011707394788*^9}},ExpressionUUID->"f7abcc51-d28d-4295-b5b8-\
+eab85fd46779"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{766, 812},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 7, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 98, 0, 96, "Title",ExpressionUUID->"77b23c8c-282e-4e1f-bb58-415c31e8453a"],
+Cell[684, 24, 4424, 80, 826, "Text",ExpressionUUID->"10671abf-5da5-48de-b673-42c08fd61662"],
+Cell[5111, 106, 153, 3, 28, "Input",ExpressionUUID->"b419b030-308e-41f5-bb6b-e17e7d526d66"],
+Cell[CellGroupData[{
+Cell[5289, 113, 97, 0, 67, "Section",ExpressionUUID->"0bfd5a6d-4108-4c80-b0c1-e6824932cd95"],
+Cell[5389, 115, 255, 4, 78, "Text",ExpressionUUID->"87743ee2-4d06-4fd5-b4b9-4431bae380e5"],
+Cell[5647, 121, 156, 3, 28, "Input",ExpressionUUID->"b4018bb5-01eb-433d-8903-18dd6c51f90d"],
+Cell[5806, 126, 2169, 49, 224, "Text",ExpressionUUID->"49c72b68-33fa-44f8-b4f3-b61ae7d94156"],
+Cell[7978, 177, 165, 3, 34, "Text",ExpressionUUID->"2221af54-6fcd-4eea-839b-38c5e7281103"],
+Cell[8146, 182, 130, 3, 28, "Input",ExpressionUUID->"2993fea4-d843-40bd-a2db-1cac3e950890"],
+Cell[8279, 187, 810, 15, 200, "Input",ExpressionUUID->"19688ffd-3847-4ca7-9e1a-d9ad8c7bf4d2"],
+Cell[CellGroupData[{
+Cell[9114, 206, 298, 5, 28, "Input",ExpressionUUID->"3baf7725-449e-4377-81a6-84887cbc57a4"],
+Cell[9415, 213, 798, 14, 166, "Output",ExpressionUUID->"b795e077-945d-4a87-9460-50fdea7df2b6"]
+}, Open  ]],
+Cell[10228, 230, 392, 11, 69, "Code",ExpressionUUID->"d8cf02c0-7a3c-4e25-9fe3-bce467ab5e3e"],
+Cell[10623, 243, 636, 12, 67, "Input",ExpressionUUID->"f7abcc51-d28d-4295-b5b8-eab85fd46779"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
