@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[     12891,        291]
-NotebookOptionsPosition[     11287,        259]
-NotebookOutlinePosition[     11628,        274]
-CellTagsIndexPosition[     11585,        271]
+NotebookDataLength[     27693,        621]
+NotebookOptionsPosition[     24540,        567]
+NotebookOutlinePosition[     24905,        583]
+CellTagsIndexPosition[     24862,        580]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -200,7 +200,7 @@ in backgrounds, religion, race and gender is inspiring. Stretching sore \
 muscles (body and brain) reminds me both have been worked, and it feels good.\
 \>\""}], ";"}], "\n"}], "Input"]], "Input",
  CellChangeTimes->{{3.7398275585744543`*^9, 3.7398275926565323`*^9}},
- CellLabel->"In[4]:=",ExpressionUUID->"19688ffd-3847-4ca7-9e1a-d9ad8c7bf4d2"],
+ CellLabel->"In[15]:=",ExpressionUUID->"19688ffd-3847-4ca7-9e1a-d9ad8c7bf4d2"],
 
 Cell[CellGroupData[{
 
@@ -209,7 +209,7 @@ Cell[BoxData[
   RowBox[{"TextCases", "[", 
    RowBox[{"text", ",", " ", "\"\<Sentence\>\""}], "]"}]}]], "Input",
  CellChangeTimes->{{3.7398276306838384`*^9, 3.7398276621192865`*^9}},
- CellLabel->"In[6]:=",ExpressionUUID->"3baf7725-449e-4377-81a6-84887cbc57a4"],
+ CellLabel->"In[16]:=",ExpressionUUID->"3baf7725-449e-4377-81a6-84887cbc57a4"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -224,9 +224,284 @@ together regardless of differences in backgrounds, religion, race and gender \
 is inspiring.\"\>", 
    ",", "\<\"Stretching sore muscles (body and brain) reminds me both have \
 been worked, and it feels good.\"\>"}], "}"}]], "Output",
- CellChangeTimes->{3.739827673142747*^9},
- CellLabel->"Out[6]=",ExpressionUUID->"b795e077-945d-4a87-9460-50fdea7df2b6"]
+ CellChangeTimes->{
+  3.739827673142747*^9, {3.7400507134970937`*^9, 3.7400507217672305`*^9}},
+ CellLabel->"Out[16]=",ExpressionUUID->"dbd64ec2-aea4-4af6-a4eb-34756a1a740a"]
 }, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Map", "[", 
+    RowBox[{"PartOfSpeech", ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<dog\>\"", ",", "\"\<eat\>\""}], "}"}]}], "]"}], "[", 
+   RowBox[{"[", "2", "]"}], "]"}], "[", 
+  RowBox[{"[", "1", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.740050698323653*^9, 3.740050708775239*^9}, {
+  3.740050764544582*^9, 3.7400507881867867`*^9}, {3.7400518799222956`*^9, 
+  3.740051894784602*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"77e05dac-1e2e-45a0-80fe-b43293a91f89"],
+
+Cell[BoxData[
+ TemplateBox[{"\"verb\"",RowBox[{"Entity", "[", 
+     RowBox[{"\"GrammaticalUnit\"", ",", "\"Verb\""}], "]"}],
+   "\"Entity[\\\"GrammaticalUnit\\\", \\\"Verb\\\"]\"","\"grammatical unit\""},
+  "Entity"]], "Output",
+ CellChangeTimes->{{3.740050709118623*^9, 3.7400507320308485`*^9}, {
+  3.740050768626135*^9, 3.7400507974950323`*^9}, {3.74005188371426*^9, 
+  3.7400518956434774`*^9}},
+ CellLabel->"Out[23]=",ExpressionUUID->"e5d3adea-13e0-418f-8923-08dd4a75a970"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"words", " ", "=", " ", 
+  RowBox[{"TextCases", "[", 
+   RowBox[{"text", ",", " ", "\"\<Word\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7400509342236032`*^9, 3.7400509438281975`*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"34fb2f07-8112-4690-82e3-ff18649af5b3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"I\"\>", ",", "\<\"am\"\>", ",", "\<\"feeling\"\>", 
+   ",", "\<\"peaceful\"\>", ",", "\<\"Watched\"\>", ",", "\<\"the\"\>", 
+   ",", "\<\"sun\"\>", ",", "\<\"rise\"\>", ",", "\<\"and\"\>", 
+   ",", "\<\"heard\"\>", ",", "\<\"the\"\>", ",", "\<\"birds\"\>", 
+   ",", "\<\"chirp\"\>", ",", "\<\"a\"\>", ",", "\<\"beautiful\"\>", 
+   ",", "\<\"good\"\>", ",", "\<\"morning\"\>", ",", "\<\"song\"\>", 
+   ",", "\<\"I\"\>", ",", "\<\"caught\"\>", ",", "\<\"up\"\>", 
+   ",", "\<\"on\"\>", ",", "\<\"slack\"\>", ",", "\<\"messages\"\>", 
+   ",", "\<\"and\"\>", ",", "\<\"smiled\"\>", ",", "\<\"at\"\>", 
+   ",", "\<\"the\"\>", ",", "\<\"intellectual\"\>", ",", "\<\"curiousity\"\>",
+    ",", "\<\"and\"\>", ",", "\<\"genuine\"\>", ",", "\<\"helpfulness\"\>", 
+   ",", "\<\"of\"\>", ",", "\<\"students\"\>", ",", "\<\"and\"\>", 
+   ",", "\<\"instructors\"\>", ",", "\<\"working\"\>", 
+   ",", "\<\"together\"\>", ",", "\<\"to\"\>", ",", "\<\"do\"\>", 
+   ",", "\<\"something\"\>", ",", "\<\"amazing\"\>", ",", "\<\"Being\"\>", 
+   ",", "\<\"a\"\>", ",", "\<\"part\"\>", ",", "\<\"of\"\>", 
+   ",", "\<\"such\"\>", ",", "\<\"a\"\>", ",", "\<\"wonderful\"\>", 
+   ",", "\<\"diverse\"\>", ",", "\<\"group\"\>", ",", "\<\"of\"\>", 
+   ",", "\<\"people\"\>", ",", "\<\"coming\"\>", ",", "\<\"together\"\>", 
+   ",", "\<\"regardless\"\>", ",", "\<\"of\"\>", ",", "\<\"differences\"\>", 
+   ",", "\<\"in\"\>", ",", "\<\"backgrounds\"\>", ",", "\<\"religion\"\>", 
+   ",", "\<\"race\"\>", ",", "\<\"and\"\>", ",", "\<\"gender\"\>", 
+   ",", "\<\"is\"\>", ",", "\<\"inspiring\"\>", ",", "\<\"Stretching\"\>", 
+   ",", "\<\"sore\"\>", ",", "\<\"muscles\"\>", ",", "\<\"body\"\>", 
+   ",", "\<\"and\"\>", ",", "\<\"brain\"\>", ",", "\<\"reminds\"\>", 
+   ",", "\<\"me\"\>", ",", "\<\"both\"\>", ",", "\<\"have\"\>", 
+   ",", "\<\"been\"\>", ",", "\<\"worked\"\>", ",", "\<\"and\"\>", 
+   ",", "\<\"it\"\>", ",", "\<\"feels\"\>", ",", "\<\"good\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.7400509442126083`*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"4a628d88-9238-4738-959c-2f6b9ff7b5e0"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Make", " ", "list", " ", "of", " ", "how", " ", "often", " ", "sentences",
+     " ", "with", " ", "activity", " ", "names", " ", "are", " ", 
+    "classified", " ", "as", " ", "positive", " ", "and", " ", "negative", 
+    " ", "and", " ", "use", " ", "the", " ", "probability", " ", "as", " ", 
+    "a", " ", "way", " ", "of", " ", "making", " ", "a", " ", "ranking", " ", 
+    "system"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"for", " ", "each", " ", "sentence"}], ",", " ", 
+    RowBox[{"classify", " ", "as", " ", 
+     RowBox[{
+      RowBox[{"positive", "/", "neg"}], "/", "ind"}], "\n", "then", " ", 
+     "save", " ", "the", " ", "activities", " ", "into", " ", "3", " ", 
+     "separate", " ", "lists"}]}], "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Count", " ", "occurrences", " ", "neg"}], ",", " ", "pos", ",", 
+    " ", "neutral"}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7400115802841682`*^9, 3.7400116365743303`*^9}, {
+  3.7400116683749323`*^9, 3.740011707394788*^9}, {3.7400491277376537`*^9, 
+  3.740049137993816*^9}, {3.740052521363776*^9, 
+  3.74005253517734*^9}},ExpressionUUID->"f7abcc51-d28d-4295-b5b8-\
+eab85fd46779"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"countSentiments", "[", " ", "text_String", " ", "]"}], " ", ":=",
+     " ", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"sentences", ",", " ", "words"}], "}"}], ",", "\n", "\t", 
+      RowBox[{
+       RowBox[{"sentences", " ", "=", " ", 
+        RowBox[{"TextCases", "[", 
+         RowBox[{"text", ",", " ", "\"\<Sentence\>\""}], "]"}]}], ";", "\n", 
+       "\t", 
+       RowBox[{"words", " ", "=", " ", 
+        RowBox[{"TextCases", "[", 
+         RowBox[{"text", ",", " ", "\"\<Word\>\""}], "]"}]}], ";", "\n", "\t", 
+       RowBox[{"Classify", "[", 
+        RowBox[{
+        "\"\<Sentiment\>\"", ",", " ", "sentences", ",", " ", 
+         "\"\<Probabilities\>\""}], "]"}], ";", "\n", "\t", 
+       RowBox[{"Counts", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<Neutral;\>\"", ",", "\"\<Positive\>\"", ",", 
+          "\"\<Indeterminate\>\""}], "}"}], "]"}], ";"}]}], "\n", 
+     "\t\t\t\t\t\t\t\t\t\t", "]"}]}], ";"}], "\[IndentingNewLine]", 
+  "\n"}]], "Code",
+ CellChangeTimes->{{3.7400484364199505`*^9, 3.740048437331965*^9}, {
+   3.740048476057172*^9, 3.7400484825773196`*^9}, {3.740048516945553*^9, 
+   3.7400485474271517`*^9}, {3.740048920975407*^9, 3.7400489801496506`*^9}, {
+   3.7400490348058376`*^9, 3.7400491180839043`*^9}, {3.74004955776476*^9, 
+   3.7400495633473926`*^9}, {3.7400495945830913`*^9, 
+   3.7400497252806683`*^9}, {3.7400497920921097`*^9, 3.740049904695176*^9}, {
+   3.7400499653405805`*^9, 3.740050005491063*^9}, {3.7400500619141417`*^9, 
+   3.7400501408023005`*^9}, {3.7400509485456305`*^9, 3.74005099479827*^9}, 
+   3.7400526163710384`*^9, {3.7400526701627965`*^9, 
+   3.740052679258986*^9}},ExpressionUUID->"ec3d6ee7-62f4-4a3b-93ed-\
+c9e617bac4e6"],
+
+Cell[BoxData[{
+ RowBox[{"countSentiments", "[", "\"\<I am good. I like puppies.\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"not", " ", "printing", " ", "out", " ", "the", " ", "counts"}], 
+     "..."}], "."}], " ", "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.7400500095879555`*^9, 3.7400500442950397`*^9}, {
+  3.7400526889132214`*^9, 
+  3.740052702562914*^9}},ExpressionUUID->"7ab27a9f-31ae-4491-b4ca-\
+6c50531ecaa6"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Count", " ", "positive", " ", "sentences", " ", "and", " ", "extract", 
+    " ", "activities", " ", "from", " ", "those", " ", "statements"}], " ", 
+   "*)"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.740050246180894*^9, 3.740050289897326*^9}, 
+   3.7400521741318874`*^9},ExpressionUUID->"d4f83914-e56e-4e29-89e7-\
+9a4d134c4835"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"countPositive", "[", " ", "text_String", " ", "]"}], " ", ":=", 
+  " ", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"sentences", ",", " ", "words", ",", " ", "positivePhrases"}], 
+     "}"}], ",", "\n", "\n", "\t", 
+    RowBox[{
+     RowBox[{"sentences", " ", "=", " ", 
+      RowBox[{"TextCases", "[", 
+       RowBox[{"text", ",", " ", "\"\<Sentence\>\""}], "]"}]}], ";", "\n", 
+     "\t", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"i", " ", "=", " ", "0"}], ",", " ", 
+       RowBox[{"i", " ", "\[LessEqual]", " ", 
+        RowBox[{"Length", "[", "sentences", "]"}]}], ",", " ", 
+       RowBox[{"i", "++"}], ",", " ", 
+       RowBox[{
+        RowBox[{"Classify", "[", 
+         RowBox[{"\"\<Sentiment\>\"", ",", 
+          RowBox[{"sentences", "[", 
+           RowBox[{"[", "i", "]"}], "]"}], ",", " ", 
+          "\"\<Probabilities\>\""}], "]"}], ";", "\n", "\t", "\n", "\t", 
+        RowBox[{"positivePhrases", "=", 
+         RowBox[{"{", "}"}]}], ";", "\n", "\t\t", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+            "\"\<Sentiment\>\"", " ", "\[Equal]", "\"\<Positive\>\""}], ",", 
+            " ", 
+            RowBox[{"AppendTo", "[", 
+             RowBox[{"positivePhrases", ",", " ", "sentence"}], "]"}], ",", 
+            " ", "Nothing"}], "]"}], "\n", "\t\t", "\n", "\t\t\t", "get", " ",
+           "list", " ", "of", " ", "activities", " ", "and", " ", 
+          "probability", " ", "counts", " ", "from", " ", "sentence", "\n", 
+          "\t\t\t", "\n", "\t\t\t\t", "words"}], " ", "=", " ", 
+         RowBox[{"TextCases", "[", 
+          RowBox[{"text", ",", " ", "\"\<Word\>\""}], "]"}]}], ";", "\n", 
+        "\t\t\t\t", 
+        RowBox[{"positiveWords", " ", "=", " ", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Map", "[", 
+            RowBox[{"PartOfSpeech", ",", "words"}], "]"}], "[", 
+           RowBox[{"[", "i", "]"}], "]"}], "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], ";", "\n", "\t\t\t\t", "\n", "\t", 
+        RowBox[{"WHat", " ", "to", " ", 
+         RowBox[{"return", ":", " ", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"basketball", ",", "0.9"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"reading", ",", "0.5"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"...", ".", "\n", "\t\t\t\t\t", "Occurrences"}], " ", 
+               "of", " ", "positive"}], ",", " ", "negative", ",", " ", 
+              RowBox[{
+              "neutral", " ", "sentences", "\t", 
+               "\n"}]}]}]}]}]}]}]}]}]}]}]}]}]}]], "Code",
+ CellChangeTimes->{{3.740050234471137*^9, 3.7400502415969334`*^9}, {
+  3.740050314665575*^9, 3.7400503328403273`*^9}, {3.7400505255940332`*^9, 
+  3.740050645666546*^9}, {3.740050815544406*^9, 3.740050819708606*^9}, {
+  3.740051001236227*^9, 3.7400511062276173`*^9}, {3.7400512573912015`*^9, 
+  3.7400513797893414`*^9}, {3.7400514183468676`*^9, 3.7400514649655457`*^9}, {
+  3.7400515060649996`*^9, 3.7400515495787086`*^9}, {3.7400516953004265`*^9, 
+  3.740051861205055*^9}, {3.7400519071142077`*^9, 3.740052079579071*^9}, {
+  3.7400523955465765`*^9, 
+  3.740052503147187*^9}},ExpressionUUID->"0a491de3-0d19-4492-827a-\
+801a78cea079"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7400505708671017`*^9, 
+  3.740050584110825*^9}},ExpressionUUID->"f7beb359-df77-43b7-a0a7-\
+7fc9e49ef962"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+  "make", " ", "histogram", " ", "of", " ", "positive", " ", "activities"}], 
+  " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.740050163980599*^9, 3.740050181944167*^9}, {
+  3.740050215248136*^9, 
+  3.7400502161649365`*^9}},ExpressionUUID->"2caf840e-0612-4ba0-bc41-\
+ccd6f4f92f54"],
+
+Cell[BoxData[""], "Code",ExpressionUUID->"4d8bac83-6d2a-4c6f-9f23-d47223df2abc"],
+
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{
+   RowBox[{
+   "make", " ", "timeline", " ", "plot", " ", "of", " ", "probability", " ", 
+    "of", " ", "positivity"}], ",", " ", "negativity", ",", " ", 
+   RowBox[{
+   "and", " ", "neutrality", " ", "for", " ", "each", " ", "activity"}]}], 
+  " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.74005228357378*^9, 
+  3.7400523469671855`*^9}},ExpressionUUID->"fc1f2dc9-ec3c-4a3e-a396-\
+ccd156200784"],
 
 Cell[BoxData[{
  RowBox[{
@@ -241,24 +516,58 @@ Benchmark\>\"", "]"}], ";"}], "\n",
 Benchmark\>\"", "]"}]}]}], "Code",ExpressionUUID->"d8cf02c0-7a3c-4e25-9fe3-\
 bce467ab5e3e"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
- RowBox[{"(*", " ", 
+ RowBox[{
+  RowBox[{"Classify", "[", 
+   RowBox[{"\"\<Sentiment\>\"", ",", "\[IndentingNewLine]", 
+    RowBox[{"TextCases", "[", 
+     RowBox[{
+     "\"\<I ate breakfast. I took a nap. I feel happy.\>\"", ",", 
+      "\"\<Sentence\>\""}], "]"}], ",", "\"\<Probabilities\>\""}], "]"}], 
+  " "}]], "Input",
+ CellChangeTimes->{{3.7400486449563475`*^9, 3.7400487916323743`*^9}, {
+  3.740048842307089*^9, 3.7400488573426886`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"ae5254dc-b3d8-41fb-a983-eb81d292a3a8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
   RowBox[{
-  "Make", " ", "list", " ", "of", " ", "how", " ", "often", " ", "sentences", 
-   " ", "with", " ", "activity", " ", "names", " ", "are", " ", "classified", 
-   " ", "as", " ", "positive", " ", "and", " ", "negative", " ", "and", " ", 
-   "use", " ", "the", " ", "probability", " ", "as", " ", "a", " ", "way", 
-   " ", "of", " ", "making", " ", "a", " ", "ranking", " ", "system"}], " ", 
-  "*)"}]], "Input",
- CellChangeTimes->{{3.7400115802841682`*^9, 3.7400116365743303`*^9}, {
-  3.7400116683749323`*^9, 
-  3.740011707394788*^9}},ExpressionUUID->"f7abcc51-d28d-4295-b5b8-\
-eab85fd46779"]
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\<\"Positive\"\>", "\[Rule]", "0.88140347278059`"}], ",", 
+     RowBox[{"\<\"Neutral\"\>", "\[Rule]", "0.08907033915418057`"}], ",", 
+     RowBox[{"\<\"Negative\"\>", "\[Rule]", "0.02952618806522956`"}]}], 
+    "\[RightAssociation]"}], ",", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\<\"Positive\"\>", "\[Rule]", "0.41956001336880105`"}], ",", 
+     RowBox[{"\<\"Neutral\"\>", "\[Rule]", "0.2328223861413775`"}], ",", 
+     RowBox[{"\<\"Negative\"\>", "\[Rule]", "0.34761760048982127`"}]}], 
+    "\[RightAssociation]"}], ",", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\<\"Positive\"\>", "\[Rule]", "0.9195897004461296`"}], ",", 
+     RowBox[{"\<\"Neutral\"\>", "\[Rule]", "0.020125164041164913`"}], ",", 
+     RowBox[{"\<\"Negative\"\>", "\[Rule]", "0.0602851355127053`"}]}], 
+    "\[RightAssociation]"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.7400487402674437`*^9, {3.74004877547937*^9, 3.7400487925943456`*^9}, {
+   3.7400488480083723`*^9, 3.7400488582343464`*^9}},
+ CellLabel->"Out[6]=",ExpressionUUID->"b3f311f9-71ea-43e9-b257-2d37a011f54e"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7400488776276083`*^9, 
+  3.740048881940205*^9}},ExpressionUUID->"f4a265d3-8787-4756-9f52-\
+057970b9d74d"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{766, 812},
+WindowSize->{780, 812},
 WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+WindowStatusArea->None,
 FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 7, 2018)",
 StyleDefinitions->"Default.nb"
 ]
@@ -284,13 +593,34 @@ Cell[5647, 121, 156, 3, 28, "Input",ExpressionUUID->"b4018bb5-01eb-433d-8903-18d
 Cell[5806, 126, 2169, 49, 224, "Text",ExpressionUUID->"49c72b68-33fa-44f8-b4f3-b61ae7d94156"],
 Cell[7978, 177, 165, 3, 34, "Text",ExpressionUUID->"2221af54-6fcd-4eea-839b-38c5e7281103"],
 Cell[8146, 182, 130, 3, 28, "Input",ExpressionUUID->"2993fea4-d843-40bd-a2db-1cac3e950890"],
-Cell[8279, 187, 810, 15, 200, "Input",ExpressionUUID->"19688ffd-3847-4ca7-9e1a-d9ad8c7bf4d2"],
+Cell[8279, 187, 811, 15, 181, "Input",ExpressionUUID->"19688ffd-3847-4ca7-9e1a-d9ad8c7bf4d2"],
 Cell[CellGroupData[{
-Cell[9114, 206, 298, 5, 28, "Input",ExpressionUUID->"3baf7725-449e-4377-81a6-84887cbc57a4"],
-Cell[9415, 213, 798, 14, 166, "Output",ExpressionUUID->"b795e077-945d-4a87-9460-50fdea7df2b6"]
+Cell[9115, 206, 299, 5, 28, "Input",ExpressionUUID->"3baf7725-449e-4377-81a6-84887cbc57a4"],
+Cell[9417, 213, 852, 15, 166, "Output",ExpressionUUID->"dbd64ec2-aea4-4af6-a4eb-34756a1a740a"]
 }, Open  ]],
-Cell[10228, 230, 392, 11, 69, "Code",ExpressionUUID->"d8cf02c0-7a3c-4e25-9fe3-bce467ab5e3e"],
-Cell[10623, 243, 636, 12, 67, "Input",ExpressionUUID->"f7abcc51-d28d-4295-b5b8-eab85fd46779"]
+Cell[CellGroupData[{
+Cell[10306, 233, 516, 12, 28, "Input",ExpressionUUID->"77e05dac-1e2e-45a0-80fe-b43293a91f89"],
+Cell[10825, 247, 476, 8, 45, "Output",ExpressionUUID->"e5d3adea-13e0-418f-8923-08dd4a75a970"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11338, 260, 291, 5, 28, "Input",ExpressionUUID->"34fb2f07-8112-4690-82e3-ff18649af5b3"],
+Cell[11632, 267, 2121, 32, 147, "Output",ExpressionUUID->"4a628d88-9238-4738-959c-2f6b9ff7b5e0"]
+}, Open  ]],
+Cell[13768, 302, 1361, 27, 181, "Input",ExpressionUUID->"f7abcc51-d28d-4295-b5b8-eab85fd46779"],
+Cell[15132, 331, 1790, 39, 177, "Code",ExpressionUUID->"ec3d6ee7-62f4-4a3b-93ed-c9e617bac4e6"],
+Cell[16925, 372, 483, 12, 48, "Input",ExpressionUUID->"7ab27a9f-31ae-4491-b4ca-6c50531ecaa6"],
+Cell[17411, 386, 407, 9, 48, "Input",ExpressionUUID->"d4f83914-e56e-4e29-89e7-9a4d134c4835"],
+Cell[17821, 397, 3378, 76, 321, "Code",ExpressionUUID->"0a491de3-0d19-4492-827a-801a78cea079"],
+Cell[21202, 475, 154, 3, 28, "Input",ExpressionUUID->"f7beb359-df77-43b7-a0a7-7fc9e49ef962"],
+Cell[21359, 480, 325, 8, 28, "Input",ExpressionUUID->"2caf840e-0612-4ba0-bc41-ccd6f4f92f54"],
+Cell[21687, 490, 80, 0, 50, "Code",ExpressionUUID->"4d8bac83-6d2a-4c6f-9f23-d47223df2abc"],
+Cell[21770, 492, 441, 11, 48, "Input",ExpressionUUID->"fc1f2dc9-ec3c-4a3e-a396-ccd156200784"],
+Cell[22214, 505, 392, 11, 69, "Code",ExpressionUUID->"d8cf02c0-7a3c-4e25-9fe3-bce467ab5e3e"],
+Cell[CellGroupData[{
+Cell[22631, 520, 517, 11, 67, "Input",ExpressionUUID->"ae5254dc-b3d8-41fb-a983-eb81d292a3a8"],
+Cell[23151, 533, 1192, 24, 71, "Output",ExpressionUUID->"b3f311f9-71ea-43e9-b257-2d37a011f54e"]
+}, Open  ]],
+Cell[24358, 560, 154, 3, 28, "Input",ExpressionUUID->"f4a265d3-8787-4756-9f52-057970b9d74d"]
 }, Open  ]]
 }, Open  ]]
 }
